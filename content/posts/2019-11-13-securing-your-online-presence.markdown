@@ -10,7 +10,7 @@ url: /securing-your-online-presence/
 
 
 
-![](/hacker.jpg)
+![](/uploads/hacker.jpg)
 
 
 

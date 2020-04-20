@@ -18,7 +18,7 @@ disqusShortname = "dan"
     info = "software developer"
     description = "Dan Menjivar's personal website"
     keywords = "blog,developer,personal"
-    avatarurl = "/memoji.png"
+    avatarurl = "/uploads/memoji.png"
 
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"

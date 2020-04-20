@@ -7,7 +7,7 @@ type: posts
 url: /dying-of-despair/
 ---
 
-{{< figure src="/aNewHope.jpg" caption="Help me, Obi-Wan Kenobi. You're my only hope.">}}
+{{< figure src="/uploads/aNewHope.jpg" caption="Help me, Obi-Wan Kenobi. You're my only hope.">}}
 
 
 

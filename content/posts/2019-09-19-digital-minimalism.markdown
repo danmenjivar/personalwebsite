@@ -14,7 +14,7 @@ tags:
 
 
 
-{{< figure src="/new_yorker_blindphones.jpg" caption="By Liam Francis Walsh for _The New Yorker_.">}}
+{{< figure src="/uploads/new_yorker_blindphones.jpg" caption="By Liam Francis Walsh for _The New Yorker_.">}}
 
 
 
@@ -67,7 +67,7 @@ Silicon Valley is full of software engineers programming day and night. Their pr
 
 
 
-![](/new_yorker_phones.jpg)
+![](/uploads/new_yorker_phones.jpg)
 
 
 
@@ -122,7 +122,7 @@ Josef Pieper defines leisure as "silent, still, celebratory, and non-instrumenta
 
 
 
-![](/new_yorker_phonephoto.jpg)
+![](/uploads/new_yorker_phonephoto.jpg)
 
 
 

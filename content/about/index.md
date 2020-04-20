@@ -5,7 +5,7 @@ draft: false
 ---
 I do my best to live a simple lifestyle and make the most of what I have. I am an excelled scholar who enjoys balancing work with pleasure, bringing novelty and strong work ethics to everything I do.
 
-If you’re looking to hire me, please view my resume.  
+If you’re looking to hire me, please view my [resume](/uploads/resume.pdf).  
 ***
 # FAQ
 ## Where did you study?

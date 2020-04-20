@@ -23,11 +23,11 @@ draft: false
 ## Master Git
 - 📕 [Learn Git in a Month of Lunches](https://amzn.to/3czHVTi) ($)
     - 🕸 [Dangit, git!](http://dangitgit.com/)
-    - [gitignore.io](https://www.codewars.com/)
-    - [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/), or [GitLab](https://about.gitlab.com/)
+    - 🔧 [gitignore.io](https://www.codewars.com/)
+    - 🔨 [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/), or [GitLab](https://about.gitlab.com/)
 - Markdown
-    - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-    - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) 
+    - 🕸 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+    - 🕸 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) 
 ## Developer Tools
 | Tool Name | Useful for |
 |:-----------------:|-----------------|

@@ -20,8 +20,8 @@ disqusShortname = "dan"
     keywords = "blog,developer,personal"
     avatarurl = "/uploads/memoji.png"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+    favicon_32 = "/favicons/favicon-32x32.png"
+    favicon_16 = "/favicons/favicon-16x16.png"
 
     footercontent = ""
 

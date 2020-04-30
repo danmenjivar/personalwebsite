@@ -4,6 +4,7 @@ date: 2020-04-18T17:35:37-07:00
 draft: false
 ---
 👍 *A growing list of mostly FREE online resources I personally use*
+
 ## Learn to Code
 - 📘 [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 - 📹 [The New Boston Videos](https://www.youtube.com/user/thenewboston)
@@ -48,3 +49,5 @@ draft: false
 - 🕸 [CodeWars](https://www.codewars.com/) 
 ---
 Have any suggestions I should consider adding? DM *[@mrlowkeydan](https://twitter.com/mrlowkeydan)* on Twitter and let me know.
+
+DISCLAIMER: I am a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for me to earn fees by linking to Amazon.com and affiliated sites.

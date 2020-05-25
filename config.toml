@@ -3,6 +3,8 @@ title = "dan menjivar"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
+googleAnalytics = "UA-167541172-1"
+
 
 paginate = 20
 canonifyurls = true

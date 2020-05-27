@@ -1,6 +1,6 @@
 ---
-title: "Coding Resources"
-date: 2020-04-18T17:35:37-07:00
+title: Coding Resources
+date: 2020-04-19T00:35:37.000Z
 draft: false
 ---
 👍 *A growing list of mostly FREE online resources I personally use*
@@ -45,6 +45,7 @@ draft: false
 |[Karabiner-Elements](https://karabiner-elements.pqrs.org/index.html)|keyboard customizer for macOS|
 |[Rive](https://rive.app/)|Making animations|
 |[Stack Overflow](https://stackoverflow.com/)|Getting unstuck|
+|[The Missing Semester](https://missing.csail.mit.edu/)| Learn what they don't teach you in college|
 |[The Noun Project](https://thenounproject.com/)|Free icons|
 |[UMLetino](http://www.umletino.com/umletino.html)|Drawing UMLs|
 |[Valgrind](http://valgrind.org/docs/manual/quick-start.html)|Patching C Memory Leaks|

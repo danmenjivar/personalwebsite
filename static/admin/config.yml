@@ -28,7 +28,13 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Body", name: "body", widget: "markdown"}
-
-
-# - name: "about"
+- name: "about"
+  label: "about"
+    description: "about me page"
+    folder: "content/about"
+    delete: false
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
     

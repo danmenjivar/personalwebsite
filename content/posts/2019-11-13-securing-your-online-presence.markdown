@@ -1,5 +1,5 @@
 ---
-author: edzich
+layout: blog
 date: 2019-11-13 22:10:16+00:00
 draft: false
 title: Securing Your Online Presence

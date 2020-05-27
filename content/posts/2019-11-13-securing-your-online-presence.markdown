@@ -1,10 +1,8 @@
 ---
 layout: blog
-date: 2019-11-13 22:10:16+00:00
-draft: false
 title: Securing Your Online Presence
-type: posts
-url: /securing-your-online-presence/
+date: 2019-11-13 22:10:16+00:00
+thumbnail: /uploads/hacker.jpg
 ---
 
 

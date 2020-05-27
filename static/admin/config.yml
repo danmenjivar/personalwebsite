@@ -8,7 +8,8 @@ publish_mode: editorial_workflow
 
 collections:
 - name: "posts" 
-  label: "posts" 
+  label: "posts"
+  description: "blog posts" 
   folder: "content/posts" 
   create: true 
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -19,5 +20,15 @@ collections:
     - {label: "Featured Image", name: "thumbnail", widget: "image"}
     - {label: "Body", name: "body", widget: "markdown"}
 - name: "code"
-- name: "about"
+  label: "code"
+  description: "coding resources page"
+  folder: "content/code"
+  delete: false
+  fields: 
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Body", name: "body", widget: "markdown"}
+
+
+# - name: "about"
     

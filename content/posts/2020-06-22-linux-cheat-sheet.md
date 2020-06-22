@@ -4,8 +4,6 @@ title: Linux Cheat Sheet
 date: 2020-06-22T15:12:51.855Z
 thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
-![]()
-
 Note: this guide is made for beginners and is Debian/Ubuntu focused.
 
 ## Essential Linux Commands
@@ -19,7 +17,13 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 | ls -l          | list contents of directory with permissions |
 | ls \<dir path>  | list contents of a directory                |
 | rm \<filepath> | delete a file|
+|rm -r[i] *| deletes all the contents of a folder (with optional i flag asks before deleting each item)|
+|rm -r[i] \<filepath>| delete a folder and its contents (optional i will asks before deleting each file)|
 | mkdir \<name> |make a folder|
+| touch \<filename>| make a new file|
+|cp \<filepath of what to copy> \<filepath of where to copy to| copy a file|
+|mv \<filepath of what to move> \<fukepath of where to move to> | move a file|
+|mv \<current file name> \<new file name>| rename a file|
 | clear (Ctrl+L) | clear terminal                              |
 
 ### A Quick Note on Paths
@@ -69,23 +73,32 @@ After running `ls -l` on a directory you should get something like this:
 For every file name on the far right, there are 3 columns associated with it: its owner, its group, and the public.
 The red boxes correspond to the owner, blue to group, and yellow to public.
 
-d denotes a directory  
-r denotes read permission  
-w denotes write permission  
-x denotes execute permission   
+- d denotes a directory  
+- r denotes read permission  
+- w denotes write permission  
+- x denotes execute permission   
 
 In the case of garden_vintage.jpg, danielmenjivar owns this file and is part of the staff group. danielmenjivar can write and read to this file, the group may read only, and the public may read only.
 
 ### Changing ownership
 | cmd | description |
 | --- | ----------- |
-|chown \<user>:\<group> \<filepath>| change ownership of file|
+|chown [-R] \<user>:\<group> \<filepath>| change ownership of file (optionally use -R to recursively change ownership of all files inside a directory)|
 
 This is useful if a file is something like this ```-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg``` by running ```sudo chown danielmenjivar:staff landscape.jpg```, I  now own the file and can read and write to it.
 
 ### Changing permissions 
 | cmd | description |
 | --- | ----------- |
-|chmod \<new permissions> \<filepath> | modify the file's permissions|
+|chmod [-R] \<new permissions> \<filepath> | modify the file's permissions (or with -R recursively modify all files in a directory)|
+
+New permissions need to be specified for each column (owner, group, public) and are done through numbers:  
+- 4 is read only
+- 6 is read and write  
+this is true for all files, if you're dealing with folders (i.e. directories) just +1 to these.
+
+So, for example full read and write permissions for a file for all groups is 666. Read and write for the owner and the public but only read for the group is 646. If these were directories then 777, and 757 correspondingly. 
+
+
 
 

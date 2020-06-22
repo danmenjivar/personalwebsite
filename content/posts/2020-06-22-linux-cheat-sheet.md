@@ -15,4 +15,4 @@ thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 |:---:|:-------:|-----------------:|
 |absolute|/|paths beginning from the root directory|
 |relative|omit / or ./|paths beginning from the current directory|
-|home|~|| 
+|home|~|| shortcut to user's home directory

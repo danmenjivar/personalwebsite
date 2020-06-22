@@ -79,13 +79,22 @@ In the case of garden_vintage.jpg, danielmenjivar owns this file and is part of 
 ### Changing ownership
 | cmd | description |
 | --- | ----------- |
-|chown \<user>:\<group> \<filepath>| change ownership of file|
+|chown [-R] \<user>:\<group> \<filepath>| change ownership of file (optionally use -R to recursively change ownership of all files inside a directory)|
 
 This is useful if a file is something like this ```-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg``` by running ```sudo chown danielmenjivar:staff landscape.jpg```, I  now own the file and can read and write to it.
 
 ### Changing permissions 
 | cmd | description |
 | --- | ----------- |
-|chmod \<new permissions> \<filepath> | modify the file's permissions|
+|chmod [-R] \<new permissions> \<filepath> | modify the file's permissions (or with -R recursively modify all files in a directory)|
+
+New permissions need to be specified for each column (owner, group, public) and are done through numbers:  
+- 4 is read only
+- 6 is read and write  
+this is true for all files, if you're dealing with folders (i.e. directories) just +1 to these.
+
+So, for example full read and write permissions for a file for all groups is 666. Read and write for the owner and the public but only read for the group is 646. If these were directories then 777, and 757 correspondingly. 
+
+
 
 

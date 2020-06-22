@@ -4,6 +4,8 @@ title: Linux Cheat Sheet
 date: 2020-06-22T15:12:51.855Z
 thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
+Note: this guide is made for beginners and is Debian/Ubuntu focused.
+
 ## Essential Linux Commands
 |cmd|description|
 |:----:|:-----------------:|
@@ -39,6 +41,14 @@ Note: this is only true for Debian based distros that use apt
 |apt-get remove \<name of program>|uninstall a program|
 |apt-cache search \<name of program>|search for a program|
 |apt-cache policy \<name of program>|checks if a program is installed|
+|apt-get update|updates the package listings|
+|apt-get upgrade|upgrades packages with newer versions|
+
+
+### Installing packages that are not in the repository by manually downloading files
+1. In a web browser, navigate to the download page of the program
+1. Download & save the correct package based on your distro and architecture (.deb for Debian)
+1. sudo dpkg -i ./<filepath of debian package>
 
 
 

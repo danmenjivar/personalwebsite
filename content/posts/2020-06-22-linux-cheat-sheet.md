@@ -73,10 +73,10 @@ After running `ls -l` on a directory you should get something like this:
 For every file name on the far right, there are 3 columns associated with it: its owner, its group, and the public.
 The red boxes correspond to the owner, blue to group, and yellow to public.
 
-d denotes a directory  
-r denotes read permission  
-w denotes write permission  
-x denotes execute permission   
+- d denotes a directory  
+- r denotes read permission  
+- w denotes write permission  
+- x denotes execute permission   
 
 In the case of garden_vintage.jpg, danielmenjivar owns this file and is part of the staff group. danielmenjivar can write and read to this file, the group may read only, and the public may read only.
 

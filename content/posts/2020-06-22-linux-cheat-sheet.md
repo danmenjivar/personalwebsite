@@ -17,7 +17,9 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 | cd ../         | move 1 directory up                         |
 | ls             | list contents of current directory          |
 | ls -l          | list contents of directory with permissions |
-| ls <dir path>  | list contents of a directory                |
+| ls \<dir path>  | list contents of a directory                |
+| rm \<filepath> | delete a file|
+| mkdir \<name> |make a folder|
 | clear (Ctrl+L) | clear terminal                              |
 
 ### A Quick Note on Paths

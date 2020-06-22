@@ -22,7 +22,7 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 | mkdir \<name> |make a folder|
 | touch \<filename>| make a new file|
 |cp \<filepath of what to copy> \<filepath of where to copy to>| copy a file|
-|mv \<filepath of what to move> \<fukepath of where to move to> | move a file|
+|mv \<filepath of what to move> \<filepath of where to move to> | move a file|
 |mv \<current file name> \<new file name>| rename a file|
 | clear (Ctrl+L) | clear terminal                              |
 

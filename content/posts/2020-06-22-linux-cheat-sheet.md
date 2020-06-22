@@ -4,6 +4,8 @@ title: Linux Cheat Sheet
 date: 2020-06-22T15:12:51.855Z
 thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
+![]()
+
 Note: this guide is made for beginners and is Debian/Ubuntu focused.
 
 ## Essential Linux Commands
@@ -60,11 +62,28 @@ Note: this is only true for Debian based distros that use apt
 
 After running `ls -l` on a directory you should get something like this:
 
-![](uploads/screen-shot-2020-06-22-at-9.03.07-am.jpg) 
- 
-For ever
+![](uploads/screen-shot-2020-06-22-at-9.03.07-am.jpg "privilegeFiles")
 
+For every file name on the far right, there are 3 columns associated with it: its owner, its group, and the public.
+The red boxes correspond to the owner, blue to group, and yellow to public.
+
+d denotes a directory  
+r denotes read permission  
+w denotes write permission  
+x denotes execute permission   
+
+In the case of garden_vintage.jpg, danielmenjivar owns this file and is part of the staff group. danielmenjivar can write and read to this file, the group may read only, and the public may read only.
+
+### Changing ownership
 | cmd | description |
 | --- | ----------- |
+|chown \<user>:\<group> \<filepath>| change ownership of file|
 
-\|
+This is useful if a file is something like this ```-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg``` by running ```sudo chown danielmenjivar:staff landscape.jpg```, I  now own the file and can read and write to it.
+
+### Changing permissions 
+| cmd | description |
+| --- | ----------- |
+|chmod \<new permissions> \<filepath> | modify the file's permissions|
+
+

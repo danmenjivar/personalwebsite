@@ -21,8 +21,8 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 |rm -r[i] \<filepath>| delete a folder and its contents (optional i will asks before deleting each file)|
 | mkdir \<name> |make a folder|
 | touch \<filename>| make a new file|
-|cp \<filepath of what to copy> \<filepath of where to copy to| copy a file|
-|mv \<filepath of what to move> \<fukepath of where to move to> | move a file|
+|cp \<filepath of what to copy> \<filepath of where to copy to>| copy a file (note: you can also copy a file and assign a new name)|
+|mv \<filepath of what to move> \<filepath of where to move to> | move a file (you can also move a file and rename it)|
 |mv \<current file name> \<new file name>| rename a file|
 | clear (Ctrl+L) | clear terminal                              |
 

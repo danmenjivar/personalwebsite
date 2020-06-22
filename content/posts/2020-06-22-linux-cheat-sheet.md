@@ -6,5 +6,6 @@ thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
 **Basic Commands**\
 |cmd|description|
-|----|------------|
+|----|:------------:|
 |pwd|print working directory|
+|cd|change directory|

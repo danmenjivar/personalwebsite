@@ -4,8 +4,6 @@ title: Linux Cheat Sheet
 date: 2020-06-22T15:12:51.855Z
 thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
-![]()
-
 Note: this guide is made for beginners and is Debian/Ubuntu focused.
 
 ## Essential Linux Commands
@@ -23,7 +21,7 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 |rm -r[i] \<filepath>| delete a folder and its contents (optional i will asks before deleting each file)|
 | mkdir \<name> |make a folder|
 | touch \<filename>| make a new file|
-|cp <filepath of what to copy> <filepath of where to copy to| copy a file|
+|cp <filepath of what to copy> \<filepath of where to copy to| copy a file|
 | clear (Ctrl+L) | clear terminal                              |
 
 ### A Quick Note on Paths

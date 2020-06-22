@@ -26,7 +26,7 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 | -------- | -------------- | ------------------------------------------ | --------------------------------- |
 | absolute | /              | paths beginning from the root directory    |                                   |
 | relative | omit / (or ./) | paths beginning from the current directory |                                   |
-| home     | ~              |                                            | shortcut to user's home directory |
+| home     | ~              |                                           shortcut to user's home directory |
 
 ## Admin Privileges
 

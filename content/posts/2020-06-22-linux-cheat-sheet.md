@@ -20,6 +20,7 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 | ls \<dir path>  | list contents of a directory                |
 | rm \<filepath> | delete a file|
 | mkdir \<name> |make a folder|
+| touch \<filename>| make a new file|
 | clear (Ctrl+L) | clear terminal                              |
 
 ### A Quick Note on Paths

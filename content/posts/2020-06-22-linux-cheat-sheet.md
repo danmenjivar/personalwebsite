@@ -9,6 +9,8 @@ This guide is made for beginners using Unix-like environments and is terminal fo
 1. [Command Line Essentials](#Command-Line-Essentials)
 2. [Absolute vs. Relative Paths](#Absolute-vs.-Relative-Paths)
 3. [Admin Privileges](#Admin-Privileges)
+4. [Package Manager (apt)](#Package-Manager-(apt))
+
 
 ## Command Line Essentials
 The bare essential you need to navigate the terminal.
@@ -58,8 +60,9 @@ More complex than the bare essentials, but still essential.
 | sudo su       | switch to super user                   |
 - **Note:** ```!!``` is useful to run a previous command with elevated privileges (e.g. ```sudo !!```)  
 
-## Apt Package Manager
+## Package Manager (apt)
 **Note:** This part of the guide is only true for Debian based distros that use apt (e.g Ubuntu)
+
 | cmd                                | description                           |
 | ---------------------------------- | ------------------------------------- |
 | apt-get install <name of program>  | install a program                     |
@@ -68,6 +71,7 @@ More complex than the bare essentials, but still essential.
 | apt-cache policy <name of program> | checks if a program is installed      |
 | apt-get update                     | updates the package listings          |
 | apt-get upgrade                    | upgrades packages with newer versions |
+
 ### Installing packages that are not in the repository by manually downloading files:
 1. In a web browser, navigate to the download page of the program
 2. Download & save the correct package based on your distro and architecture (.deb for Debian)

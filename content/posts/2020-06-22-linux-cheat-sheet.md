@@ -5,11 +5,7 @@ date: 2020-06-22T15:12:51.855Z
 thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
 This guide is made for beginners using Unix-like environments and is terminal focused.
-# Table of Contents
-1. [Command Line Essentials](##Command-Line-Essentials)
-2. [Absolute vs. Relative Paths](##Absolute-vs.-Relative-Paths)
-3. [Admin Privileges](##Admin-Privileges)
-4. [Package Manager (apt)](##Package-Manager-(apt))
+{{.TableOfContents}}
 
 
 ## Command Line Essentials

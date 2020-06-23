@@ -2,9 +2,8 @@
 layout: blog
 title: Linux Cheat Sheet
 date: 2020-06-22T15:12:51.855Z
-thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 toc: true
-featured_image: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
+featured_image: /uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
 This guide is made for beginners using Unix-like environments and is terminal focused.
 

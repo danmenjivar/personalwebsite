@@ -22,6 +22,7 @@ The bare essential you need to navigate the terminal.
 | mv <what> <where>   | move a file or directory           |
 | mv <name> <newName> | rename a file or directory         |
 | rm <path>           | delete a file or directory (⚠️)    |
+| Ctrl+C              | kill a process (`SIGINT`)          |
 | clear (Ctrl+L)      | clear terminal                     |
 
 * **Note**: Both `cp` & `mv` allow you to rename a file while performing their respective (copy or move) action and can accept full filepaths.
@@ -37,6 +38,7 @@ More complex than the bare essentials, but still essential.
 | ls -l            | list contents of directory with permissions (⚠️) |
 | rm -r\[i] *      | delete the contents of a directory (⚠️)          |
 | rm -r\[i] <path> | delete a folder and its contents (⚠️)            |
+| Ctrl+Z           | suspend a process (`SIGSTOP`)                    |
 
 **Notes**:
 
@@ -182,9 +184,55 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 ## Manage Processes (top)
 
-# CRONTABS
+| cmd | description |
+|-----|-------------|
+| top               | shows in real-time the top of the list of running applications |
+|ps aux | captures a list of running applications (not real-time)|
+|pgrep \<command> | lists the pid's associated with a command
+|kill \<pid> | kill a process instance|
+|killall \<command> | kill all instances of a process |
 
-# ADD/REMOVE USERS
+**Notes:** 
+* `top`:
+    * `PID` is the process id, used to manage processes
+    * `USER` who the process is running for
+    * `TIME+` how long the process has been running for
+    * `COMMAND` the command associated with the process
+* `ps aux`:
+    * You can use grep to search for processes like this: `ps aux | grep firefox`
+* `pgrep`:
+    * the pid's are listed in chronological order
+
+## Services
+Services are background processes. 
+
+| cmd | description |
+|-----|-------------|
+| service \<name> start              | start a service |
+| service \<name> stop               | stop a service  |
+| service \<name> restart            | restart a service  |
+| systemctl start \<name>            | start a service  |
+| systemctl stop \<name>            | stop a service  |
+
+## Scheduling Tasks (crontab/cronjobs)
+Cronjobs are processes used to automate tasks (e.g. running backups, updates, etc.)
+
+| cmd | description |
+|-----|-------------|
+| crontab -e              | start a ctrontab & save it to /etc |
+
+### Cronjob Structure
+
+|abbreviation| meaning | values|
+|------------|---------|-------|
+|m| minutes| 0-59|
+|h| hours |0-23|
+|dom| day of month|1-31|
+mon| month number |1-12|
+dow| day of week| 0-6|
+command | to perform||
+
+## Add & Remove Users
 
 
 ## Miscellaneous: Running Past Commands

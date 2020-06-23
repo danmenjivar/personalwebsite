@@ -24,6 +24,7 @@ The bare essential you need to navigate the terminal.
 | rm <path>           | delete a file or directory (⚠️)    |
 | Ctrl+C              | kill a process (`SIGINT`)          |
 | clear (Ctrl+L)      | clear terminal                     |
+| man \<command>      | read the manual of a program       |
 
 * **Note**: Both `cp` & `mv` allow you to rename a file while performing their respective (copy or move) action and can accept full filepaths.
 
@@ -33,12 +34,14 @@ More complex than the bare essentials, but still essential.
 
 | cmd              | description                                      |
 | ---------------- | ------------------------------------------------ |
+| cat \<filename>  | concatenates (useful for viewing files)          |
 | cd ../           | move 1 directory up                              |
 | ls <path>        | list contents of a given directory               |
 | ls -l            | list contents of directory with permissions (⚠️) |
 | rm -r\[i] *      | delete the contents of a directory (⚠️)          |
 | rm -r\[i] <path> | delete a folder and its contents (⚠️)            |
 | Ctrl+Z           | suspend a process (`SIGSTOP`)                    |
+| script \<output> | log terminal to a file                           |
 
 **Notes**:
 

@@ -103,13 +103,13 @@ So, for example full read and write permissions for a file for all groups is 666
 
 ### Find Command
 The find command is used to **search for files** and it's general syntax is:  
-```find <directory> [<type>] <[i]name filename | permission permcode | filesize filesizeAmount>```  
+```find <directory> [<type>] <search criteria>```  
 where: 
 - ```<directory>``` is the directory you want to begin searching at
 - ```<type>``` is an optional flag, omitting this flag will search for both files and directories
     - ```-type f``` will only search for files
     - ```-type d``` will only search for directories
-- a search criteria such as filename, file permissions, or file size
+- a ```search criteria``` such as filename, file permissions, or file size
     - ```-[i]name filename``` search by name with the optional i flag to ignore case sensitivity
     - ```-perm permcode``` search by permissions using a permcode (e.g. 0664)
     - ```-size [+|-]size``` you can search for files greater, lesser, or of exact size (e.g. +1M)

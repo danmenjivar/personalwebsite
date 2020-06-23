@@ -84,7 +84,7 @@ More complex than the bare essentials, but still essential.
 
 ## File Permissions & Ownership
 
-### Understanding file permissions
+### Understanding File Permissions
 
 After running `ls -l` on a directory you should get something like this:
 
@@ -98,36 +98,43 @@ The red boxes correspond to the owner, blue to group, and yellow to public.
 * w denotes write permission  
 * x denotes execute permission   
 
-In the case of garden_vintage.jpg, danielmenjivar owns this file and is part of the staff group. danielmenjivar can write and read to this file, the group may read only, and the public may read only.
+In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part of the `staff` group.  
+`danielmenjivar` can write and read to this file, both the `staff` group and the public may read only.
 
 ### Changing ownership
 
 | cmd                                   | description                                                                                                  |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| chown \[-R] <user>:<group> <filepath> | change ownership of file (optionally use -R to recursively change ownership of all files inside a directory) |
+| chown [-R] \<user>:\<group> \<path>   | change ownership |
 
-**Note:** This is useful if a file's permissions are something like this:\
-`-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg`\
-by running: `sudo chown danielmenjivar:staff landscape.jpg`,\
-`danielmenjivar` now owns the file and can read and write to it.
+**Note:** The optional argument [-R] is used to recursively change ownership of all files inside a directory.
+
+**Why/When do we use chown?** A common scenario to use `chown` is when certain files or directories are owned by the root user and need to be owned by another non-root user. In this scenario a file's permission would look something like this (after executing `ls -l`):  
+`-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg`.\
+By executing: `sudo chown danielmenjivar:staff landscape.jpg`,\
+`danielmenjivar` gains ownership the file and as a result can read and write to it.
 
 ### Changing permissions
 
 | cmd                                      | description                                                                            |
 | ---------------------------------------- | -------------------------------------------------------------------------------------- |
-| chmod \[-R] <new permissions> <filepath> | modify the file's permissions (or with -R recursively modify all files in a directory) |
+| chmod [-R] \<mode> \<path> | modify the file's permissions |
 
-New permissions need to be specified for each column (owner, group, public) and are done through numbers:  
+**Note:** The optional argument [-R] is used to recursively modify permissions of all the files inside a directory.
 
-* 4 is read only
-* 6 is read and write\
-  this is true for all files, if you're dealing with folders (i.e. directories) just +1 to these.
+**mode?** The mode is numeric (absolute octal) representation of file permissions. New permissions need to be specified for each column (owner, group, public) and are done through numbers. The basics you need to know are:
+* 4 is read-only
+* 6 is read-and-write\
+This is true for all files, if you're dealing with directories (i.e. folders) just +1 to these (5 is read-only, 7 is read-and-write).
 
-So, for example full read and write permissions for a file for all groups is 666. Read and write for the owner and the public but only read for the group is 646. If these were directories then 777, and 757 correspondingly. 
+**Why/When/How do we use chmod?** Suppose you are an admin and a staff member (who is part of the `staff` group) wants to edit `file.txt`, but for some odd reason they can't. To investigate they run `ls -l` and this is the result:
+`-rw-r--r--  1 danielmenjivar  staff  0 Jun 23 11:56 file.txt`.
+The staff members ask you give them read-and-write permission. You don't want the public to be able to read-and-write and there is no need to give them ownership of `file.txt`. To do this, all you have to do is run:
+`chmod 664 ./file.txt`, where 6 is read-and-write for yourself (no reason to give up these permissions for yourself, let's assume you are me `danmenjivar`, the owner), 6 is read-and-write for the staff group, and 4 is read only for the public (you don't want any shenanigans happening). Every column gets a number, for more details on chmod check out the `man` page on it.
 
-## Find and GREP
+## Find and Grep
 
-### Find Command
+### Find
 
 The find command is used to **search for files** and it's general syntax is:\
 `find <directory> [<type>] <search criteria>`\
@@ -141,7 +148,7 @@ where:
 * a `search criteria` such as filename, file permissions, or file size
 
   * `-[i]name filename` search by name with the optional i flag to ignore case sensitivity
-  * `-perm permcode` search by permissions using a permcode (e.g. 0664)
+  * `-perm mode` search by permissions using a mode (e.g. 0664)
   * `-size [+|-]size` you can search for files greater, lesser, or of exact size (e.g. +1M)
   * Note: you can negate a search criteria by placing the `-not` option in front of it.
 * Find is recursive, to disable this use `-maxdepth amount`  where amount is the numeric level (e.g. 1)

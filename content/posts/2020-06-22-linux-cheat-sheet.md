@@ -232,7 +232,15 @@ mon| month number |1-12|
 dow| day of week| 0-6|
 command | to perform||
 
-## Add & Remove Users
+## Managing Users
+| cmd | description |
+|-----|-------------|
+| adduser \<username> | add new user |
+| adduser \<username> sudo | add user to sudo group|
+| deluser \<username>| remove user|
+| passwd \<username> | change a password for a user account |
+| groupadd \<groupname> | create a new group|
+| adduser \<username> \<groupname> | add user to group|
 
 
 ## Miscellaneous: Running Past Commands

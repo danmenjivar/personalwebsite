@@ -72,10 +72,10 @@ More complex than the bare essentials, but still essential.
 | apt-get update                     | updates the package listings          |
 | apt-get upgrade                    | upgrades packages with newer versions |
 
-### Installing packages that are not in the repository by manually downloading files:
+### Installing packages not in the repository by manually downloading files:
 1. In a web browser, navigate to the download page of the program
 2. Download & save the correct package based on your distro and architecture (.deb for Debian)
-3. sudo dpkg -i ./<filepath of debian package>
+3. Run ```sudo dpkg -i ./<path>``` where ```<path>``` is the filepath of the debian package (e.g .deb)
 
 ## File Permissions & Ownership
 ### Understanding file permissions

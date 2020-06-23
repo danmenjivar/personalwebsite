@@ -28,11 +28,11 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 
 ### A Quick Note on Paths
 
-| type     | symbol         | description                                |                                   |
-| -------- | -------------- | ------------------------------------------ | --------------------------------- |
-| absolute | /              | paths beginning from the root directory    |                                   |
-| relative | omit / (or ./) | paths beginning from the current directory |                                   |
-| home     | ~              |                                           shortcut to user's home directory |
+| type     | symbol         | description                                |
+| -------- | -------------- | ------------------------------------------ |
+| absolute | /              | paths beginning from the root directory    |                                   
+| relative | omit / (or ./) | paths beginning from the current directory |
+| home     | ~              | shortcut to user's home directory          |
 
 ## Admin Privileges
 

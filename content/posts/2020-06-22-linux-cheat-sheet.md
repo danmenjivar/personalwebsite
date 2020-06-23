@@ -4,10 +4,9 @@ title: Linux Cheat Sheet
 date: 2020-06-22T15:12:51.855Z
 toc: true
 featured_image: /uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
+featured_image_caption: "This guide is made for beginners using Unix-like environments and is terminal focused."
+
 ---
-This guide is made for beginners using Unix-like environments and is terminal focused.
-
-
 ## Command Line Essentials
 The bare essential you need to navigate the terminal.
 

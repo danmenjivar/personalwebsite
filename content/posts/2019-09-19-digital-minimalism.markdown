@@ -1,25 +1,9 @@
 ---
-date: 2019-09-19 00:26:28+00:00
-draft: false
+layout: blog
 title: Digital Minimalism
-type: posts
-url: /digital-minimalism/
-tags:
-- alonetime
-- digitalminimalism
-- intentionality
-- leisure
-- mindfulness
+date: 2019-09-19 00:26:28+00:00
+featured_image: "/uploads/new_yorker_blindphones.jpg"
 ---
-
-
-
-{{< figure src="/uploads/new_yorker_blindphones.jpg" caption="By Liam Francis Walsh for _The New Yorker_.">}}
-
-
-
-
-
 
 
 The twentieth-first century has become a tech-dominated dystopia, as cartoonist Liam Francis Walsh humorously draws out. Walsh himself is a city dweller who doesn't own a smartphone. This new sense of "digital minimalism", a term coined by Cal Newport, is the reaction to this digitally consumed planet.  

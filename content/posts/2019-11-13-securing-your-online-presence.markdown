@@ -2,13 +2,12 @@
 layout: blog
 title: Securing Your Online Presence
 date: 2019-11-13 22:10:16.000
-thumbnail: /uploads/hacker.jpg
+featured_image: /uploads/hacker.jpg
 ---
 
 
 
 
-![](/uploads/hacker.jpg)
 
 
 

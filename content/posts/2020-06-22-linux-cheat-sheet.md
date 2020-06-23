@@ -65,10 +65,10 @@ More complex than the bare essentials, but still essential.
 
 | cmd                                | description                           |
 | ---------------------------------- | ------------------------------------- |
-| apt-get install <name of program>  | install a program                     |
-| apt-get remove <name of program>   | uninstall a program                   |
-| apt-cache search <name of program> | search for a program                  |
-| apt-cache policy <name of program> | checks if a program is installed      |
+| apt-get install \<name>  | install a program                     |
+| apt-get remove \<name>   | uninstall a program                   |
+| apt-cache search \<name> | search for a program                  |
+| apt-cache policy \<name> | checks if a program is installed      |
 | apt-get update                     | updates the package listings          |
 | apt-get upgrade                    | upgrades packages with newer versions |
 

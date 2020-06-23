@@ -101,7 +101,7 @@ The red boxes correspond to the owner, blue to group, and yellow to public.
 In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part of the `staff` group.  
 `danielmenjivar` can write and read to this file, both the `staff` group and the public may read only.
 
-### Changing ownership
+### Changing Ownership (chown)
 
 | cmd                                   | description                                                                                                  |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -114,7 +114,7 @@ In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part
 By executing: `sudo chown danielmenjivar:staff landscape.jpg`,\
 `danielmenjivar` gains ownership the file and as a result can read and write to it.
 
-### Changing permissions
+### Modifying Permissions (chmod)
 
 | cmd                                      | description                                                                            |
 | ---------------------------------------- | -------------------------------------------------------------------------------------- |
@@ -135,20 +135,61 @@ The staff members ask you give them read-and-write permission. You don't want th
 ## Find and Grep
 
 ### Find
+| cmd | description |
+|-----|-------------|
+| find \<directory> [\<type>] \<criteria> | search for files|
 
-The find command is used to **search for files** and it's general syntax is:\
-`find <directory> [<type>] <search criteria>`\
-where: 
-
-* `<directory>` is the directory you want to begin searching at
+* `<directory>` is the path of the directory you want to begin searching at
 * `<type>` is an optional flag, omitting this flag will search for both files and directories
 
   * `-type f` will only search for files
   * `-type d` will only search for directories
-* a `search criteria` such as filename, file permissions, or file size
+* a search `<criteria>` such as filename, file permissions, or file size
 
-  * `-[i]name filename` search by name with the optional i flag to ignore case sensitivity
+  * `-[i]name filename` search by name with the optional `[i]` flag to ignore case sensitivity
   * `-perm mode` search by permissions using a mode (e.g. 0664)
-  * `-size [+|-]size` you can search for files greater, lesser, or of exact size (e.g. +1M)
-  * Note: you can negate a search criteria by placing the `-not` option in front of it.
-* Find is recursive, to disable this use `-maxdepth amount`  where amount is the numeric level (e.g. 1)
+  * `-size [+|-]size` you can search for files greater, lesser, or of exact size (e.g. +1M, -1M, 1M)
+  * **Note:** you can negate a search criteria by placing the `-not` option in front of the criteria.
+* Find is recursive by default, to disable this use `-maxdepth <amount>`  where `<amount>` is the numeric level (e.g. 1) to limit your search.
+
+### Grep
+| cmd | description |
+|-----|-------------|
+| grep [-n] [-i] \<keyword> \<directory> | search contents of files|
+* `<directory>` is the path of the directory you want to begin searching at
+* `<keyword>` is the search string, i.e. what you're looking for
+* `[-i]` optional flag, ignores case sensitivity
+* `[-n]` optional flag, appends the line numbers to each result
+
+### Grep+Find
+
+| cmd | description |
+|-----|-------------|
+| find \<directory> [\<type>] \<criteria> **-exec** grep [-n] [-i] \<keyword> \<directory> **{} +** | search contents of some particular files|
+* `-exec` joins the find and grep commands
+* `{} +` is used to delimit the end of the `-exec`
+
+**When/How/Why?** Suppose you want to search for the contents of some php files in your current directory. The find command for searching php files would be: `find . -type -iname "*.php"`. To search the contents of these files you can pair find with grep using the `-exec` command. All `-exec` does is run your grep command after running find. To signal when the exec is over, we append `{} +` to the end of the grep command. The resulting command would look like this: `find . -type -iname "*.php" -exec grep -i -n "function" {} +`.
+
+
+## Redirecting Output of a Command
+
+| cmd | description |
+|-----|-------------|
+| \<command> > \<output>                | redirecting output of a command (e.g. ls > out.txt) |
+| \<command> \| tee \<output>           | redirecting output of a command while seeing results in real-time (e.g. ls \| tee out.txt)|
+
+
+## Manage Processes (top)
+
+# CRONTABS
+
+# ADD/REMOVE USERS
+
+
+## Miscellaneous: Running Past Commands
+| cmd | description |
+|-----|-------------|
+| !! | "bang bang", shorthand for last command |
+| history | displays the last couple commands ran |
+| !\<line> | run past command based on a command number|

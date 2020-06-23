@@ -113,7 +113,8 @@ where:
     - ```-[i]name filename``` search by name with the optional i flag to ignore case sensitivity
     - ```-perm permcode``` search by permissions using a permcode (e.g. 0664)
     - ```-size [+|-]size``` you can search for files greater, lesser, or of exact size (e.g. +1M)
-- you can also negate a search criteria with the ```-not``` option placed in front of the search criteria 
+    - Note: you can negate a search criteria by placing the ```-not``` option in front of it.
+- Find is recursive, to disable this use ```-maxdepth amount```  where amount is the numeric level (e.g. 1)
 
 
 

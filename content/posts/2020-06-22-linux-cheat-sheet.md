@@ -4,29 +4,42 @@ title: Linux Cheat Sheet
 date: 2020-06-22T15:12:51.855Z
 thumbnail: uploads/torsten-dederichs-3dda9p4fu9u-unsplash.jpg
 ---
-Note: this guide is made for beginners and is Debian/Ubuntu focused.
+This guide is made for beginners using Unix-like environments and is terminal focused.
+# Table of Contents
+1. [Command Line Essentials](#Command-Line-Essentials)
+2. [Absolute vs. Relative Paths](#Absolute-vs.-Relative-Paths)
+3. [Admin Privileges](#Admin-Privileges)
 
-## Essential Linux Commands
-
+## Command Line Essentials
+What you need to navigate around the terminal.
 | cmd            | description                                 |
 | -------------- | ------------------------------------------- |
 | pwd            | print working directory                     |
 | cd             | change directory                            |
-| cd ../         | move 1 directory up                         |
 | ls             | list contents of current directory          |
-| ls -l          | list contents of directory with permissions |
-| ls \<dir path> | list contents of a directory                |
-| mkdir \<name>  |make a folder|
-| touch \<filename>| make a new file|
-|cp \<filepath of what to copy> \<filepath of where to copy to>| copy a file (note: you can also copy a file and assign a new name)|
-|mv \<filepath of what to move> \<filepath of where to move to> | move a file (you can also move a file and rename it)|
-|mv \<current file name> \<new file name>| rename a file|
-| rm \<filepath> | delete a file                               |
-|rm -r[i] *| deletes all the contents of a folder (with optional i flag asks before deleting each item)|
-|rm -r[i] \<filepath>| delete a folder and its contents (optional i will asks before deleting each file)|
+| touch \<name>  | make a new file                             |
+| mkdir \<name>  | make a directory (i.e. folder)              |
+| cp \<what> \<where>| copy a file or directory                |
+| mv \<what> \<where>| move a file or directory                |
+| mv \<name> \<newName>| rename a file or directory            |
+| rm \<path> | delete a file or directory (⚠️)             |
 | clear (Ctrl+L) | clear terminal                              |
-
-### A Quick Note on Paths
+- **Note**: Both ```cp``` & ```mv``` allow you to rename a file while performing their respective (copy or move) action and can accept full filepaths.
+### Extensions of Commands Line Essentials
+More complex than the bare essentials, but still essential.
+| cmd            | description                                      |
+| -------------- | -------------------------------------------------|
+| cd ../         | move 1 directory up                              |
+| ls \<path>     | list contents of a given directory               |                    
+| ls -l          | list contents of directory with permissions (⚠️) |
+| rm -r[i] *     | delete the contents of a directory (⚠️)          |
+| rm -r[i] \<path>| delete a folder and its contents (⚠️)           |
+**Notes**:
+- Whenever this guide uses ```[]``` the contents inside of the bracket represent an optional argument.
+- The optional argument ```[i]``` triggers ```rm's``` interactive mode which will prompt you before performing each and every delete. This is a safer approach to deletion.
+- The author of this guide will like to make note of the  optional ```[f]``` argument (used as -rf) which forcefully deletes a directory or file. While useful this can also be dangerous, please exert caution and ensure you most definitely can and should delete the file or directory before executing this action. 
+## Absolute vs. Relative Paths
+> "An absolute or full path points to the same location in a file system, regardless of the current working directory. To do that, it must include the root directory. By contrast, a relative path starts from some given working directory, avoiding the need to provide the full absolute path." ([Wikipedia](https://en.wikipedia.org/wiki/Path_(computing)#:~:text=Absolute%20and%20relative%20paths,provide%20the%20full%20absolute%20path.))
 
 | type     | symbol         | description                                |
 | -------- | -------------- | ------------------------------------------ |
@@ -35,18 +48,15 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 | home     | ~              | shortcut to user's home directory          |
 
 ## Admin Privileges
-
 | cmd           | description                            |
 | ------------- | -------------------------------------- |
 | sudo <cmd>    | super user do                          |
 | !!            | "bang bang" shorthand for last command |
 | su <username> | switch user                            |
 | sudo su       | switch to super user                   |
-
-## Apt Package Manager
-
-Note: this is only true for Debian based distros that use apt
-
+- **Note:** ```!!``` is useful to run a previous command with elevated privileges (e.g. ```sudo !!```)  
+## Package Manager (Apt)
+**Note:** This part of the guide is only true for Debian based distros that use apt (e.g Ubuntu)
 | cmd                                | description                           |
 | ---------------------------------- | ------------------------------------- |
 | apt-get install <name of program>  | install a program                     |
@@ -56,14 +66,12 @@ Note: this is only true for Debian based distros that use apt
 | apt-get update                     | updates the package listings          |
 | apt-get upgrade                    | upgrades packages with newer versions |
 
-### Installing packages that are not in the repository by manually downloading files
-
+### Installing packages that are not in the repository by manually downloading files:
 1. In a web browser, navigate to the download page of the program
 2. Download & save the correct package based on your distro and architecture (.deb for Debian)
 3. sudo dpkg -i ./<filepath of debian package>
 
 ## File Permissions & Ownership
-
 ### Understanding file permissions
 
 After running `ls -l` on a directory you should get something like this:
@@ -85,7 +93,10 @@ In the case of garden_vintage.jpg, danielmenjivar owns this file and is part of 
 | --- | ----------- |
 |chown [-R] \<user>:\<group> \<filepath>| change ownership of file (optionally use -R to recursively change ownership of all files inside a directory)|
 
-This is useful if a file is something like this ```-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg``` by running ```sudo chown danielmenjivar:staff landscape.jpg```, I  now own the file and can read and write to it.
+**Note:** This is useful if a file's permissions are something like this:  
+```-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg```   
+by running: ```sudo chown danielmenjivar:staff landscape.jpg```,   
+```danielmenjivar``` now owns the file and can read and write to it.
 
 ### Changing permissions 
 | cmd | description |

@@ -11,7 +11,8 @@ This guide is made for beginners using Unix-like environments and is terminal fo
 3. [Admin Privileges](#Admin-Privileges)
 
 ## Command Line Essentials
-What you need to navigate around the terminal.
+The bare essential you need to navigate the terminal.
+
 | cmd            | description                                 |
 | -------------- | ------------------------------------------- |
 | pwd            | print working directory                     |
@@ -25,8 +26,10 @@ What you need to navigate around the terminal.
 | rm \<path> | delete a file or directory (⚠️)             |
 | clear (Ctrl+L) | clear terminal                              |
 - **Note**: Both ```cp``` & ```mv``` allow you to rename a file while performing their respective (copy or move) action and can accept full filepaths.
+
 ### Extensions of Commands Line Essentials
 More complex than the bare essentials, but still essential.
+
 | cmd            | description                                      |
 | -------------- | -------------------------------------------------|
 | cd ../         | move 1 directory up                              |
@@ -38,9 +41,8 @@ More complex than the bare essentials, but still essential.
 - Whenever this guide uses ```[]``` the contents inside of the bracket represent an optional argument.
 - The optional argument ```[i]``` triggers ```rm's``` interactive mode which will prompt you before performing each and every delete. This is a safer approach to deletion.
 - The author of this guide will like to make note of the  optional ```[f]``` argument (used as -rf) which forcefully deletes a directory or file. While useful this can also be dangerous, please exert caution and ensure you most definitely can and should delete the file or directory before executing this action. 
-## Absolute vs. Relative Paths
-> "An absolute or full path points to the same location in a file system, regardless of the current working directory. To do that, it must include the root directory. By contrast, a relative path starts from some given working directory, avoiding the need to provide the full absolute path." ([Wikipedia](https://en.wikipedia.org/wiki/Path_(computing)#:~:text=Absolute%20and%20relative%20paths,provide%20the%20full%20absolute%20path.))
 
+## Absolute vs. Relative Paths
 | type     | symbol         | description                                |
 | -------- | -------------- | ------------------------------------------ |
 | absolute | /              | paths beginning from the root directory    |                                   
@@ -55,7 +57,8 @@ More complex than the bare essentials, but still essential.
 | su <username> | switch user                            |
 | sudo su       | switch to super user                   |
 - **Note:** ```!!``` is useful to run a previous command with elevated privileges (e.g. ```sudo !!```)  
-## Package Manager (Apt)
+
+## Apt Package Manager
 **Note:** This part of the guide is only true for Debian based distros that use apt (e.g Ubuntu)
 | cmd                                | description                           |
 | ---------------------------------- | ------------------------------------- |
@@ -65,7 +68,6 @@ More complex than the bare essentials, but still essential.
 | apt-cache policy <name of program> | checks if a program is installed      |
 | apt-get update                     | updates the package listings          |
 | apt-get upgrade                    | upgrades packages with newer versions |
-
 ### Installing packages that are not in the repository by manually downloading files:
 1. In a web browser, navigate to the download page of the program
 2. Download & save the correct package based on your distro and architecture (.deb for Debian)

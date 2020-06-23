@@ -68,7 +68,7 @@ Note: this is only true for Debian based distros that use apt
 
 After running `ls -l` on a directory you should get something like this:
 
-![](uploads/screen-shot-2020-06-22-at-9.03.07-am.jpg "privilegeFiles")
+![](/static/uploads/lsTerminal.jpg "privilegeFiles")
 
 For every file name on the far right, there are 3 columns associated with it: its owner, its group, and the public.
 The red boxes correspond to the owner, blue to group, and yellow to public.

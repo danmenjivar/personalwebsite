@@ -15,15 +15,15 @@ Note: this guide is made for beginners and is Debian/Ubuntu focused.
 | cd ../         | move 1 directory up                         |
 | ls             | list contents of current directory          |
 | ls -l          | list contents of directory with permissions |
-| ls \<dir path>  | list contents of a directory                |
-| rm \<filepath> | delete a file|
-|rm -r[i] *| deletes all the contents of a folder (with optional i flag asks before deleting each item)|
-|rm -r[i] \<filepath>| delete a folder and its contents (optional i will asks before deleting each file)|
-| mkdir \<name> |make a folder|
+| ls \<dir path> | list contents of a directory                |
+| mkdir \<name>  |make a folder|
 | touch \<filename>| make a new file|
 |cp \<filepath of what to copy> \<filepath of where to copy to>| copy a file (note: you can also copy a file and assign a new name)|
 |mv \<filepath of what to move> \<filepath of where to move to> | move a file (you can also move a file and rename it)|
 |mv \<current file name> \<new file name>| rename a file|
+| rm \<filepath> | delete a file                               |
+|rm -r[i] *| deletes all the contents of a folder (with optional i flag asks before deleting each item)|
+|rm -r[i] \<filepath>| delete a folder and its contents (optional i will asks before deleting each file)|
 | clear (Ctrl+L) | clear terminal                              |
 
 ### A Quick Note on Paths
@@ -98,6 +98,22 @@ New permissions need to be specified for each column (owner, group, public) and 
 this is true for all files, if you're dealing with folders (i.e. directories) just +1 to these.
 
 So, for example full read and write permissions for a file for all groups is 666. Read and write for the owner and the public but only read for the group is 646. If these were directories then 777, and 757 correspondingly. 
+
+## Find and GREP
+
+### Find Command
+The find command is used to **search for files** and it's general syntax is:  
+```find <directory> [<type>] <[i]name filename | permission permcode | filesize filesizeAmount>```  
+where: 
+- ```<directory>``` is the directory you want to begin searching at
+- ```<type>``` is an optional flag, omitting this flag will search for both files and directories
+    - ```-type f``` will only search for files
+    - ```-type d``` will only search for directories
+- a search criteria such as filename, file permissions, or file size
+    - ```-[i]name filename``` search by name with the optional i flag to ignore case sensitivity
+    - ```-perm permcode``` search by permissions using a permcode (e.g. 0664)
+    - ```-size [+|-]size``` you can search for files greater, lesser, or of exact size (e.g. +1M)
+- you can also negate a search criteria with the ```-not``` option placed in front of the search criteria 
 
 
 

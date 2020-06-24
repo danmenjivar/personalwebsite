@@ -16,12 +16,12 @@ The bare essential you need to navigate the terminal.
 | pwd                 | print working directory            |
 | cd                  | change directory                   |
 | ls                  | list contents of current directory |
-| touch <name>        | make a new file                    |
-| mkdir <name>        | make a directory (i.e. folder)     |
-| cp <what> <where>   | copy a file or directory           |
-| mv <what> <where>   | move a file or directory           |
-| mv <name> <newName> | rename a file or directory         |
-| rm <path>           | delete a file or directory (⚠️)    |
+| touch \<name>        | make a new file                    |
+| mkdir \<name>        | make a directory (i.e. folder)     |
+| cp \<what> \<where>   | copy a file or directory           |
+| mv \<what> \<where>   | move a file or directory           |
+| mv \<name> \<newName> | rename a file or directory         |
+| rm \<path>           | delete a file or directory (⚠️)    |
 | Ctrl+C              | kill a process (`SIGINT`)          |
 | clear (Ctrl+L)      | clear terminal                     |
 | man \<command>      | read the manual of a program       |
@@ -35,6 +35,7 @@ More complex than the bare essentials, but still essential.
 | cmd              | description                                      |
 | ---------------- | ------------------------------------------------ |
 | cat \<filename>  | concatenates (useful for viewing files)          |
+| echo \<string>               | outputs string(s) passed (useful for bash scripting) |
 | cd ../           | move 1 directory up                              |
 | ls <path>        | list contents of a given directory               |
 | ls -l            | list contents of directory with permissions (⚠️) |

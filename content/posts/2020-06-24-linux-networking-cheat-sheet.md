@@ -84,6 +84,7 @@ A hostname is basically the name of your machine. You can use your hostname as a
 | cmd | description|
 |-----|------------|
 | ssh \<connection string>| access the command line of a remote host|
+| exit| close secure shell connection|
 
 where `<connection string>` is either:
 1. `<username>@<remotehost>`
@@ -92,7 +93,29 @@ where `<connection string>` is either:
 
 ### Setup ssh host on your local machine
 
+1. Install openssh-server if you haven't already
+2. Optionally, change the default port & authentication
+    - edit `/etc/ssh/sshd_config`
+        - change default `Port 22`
+        - change `PermitRootLogin without-password` to `PermitRootLogin no` to disable remote root access
+        - add `AllowUsers <name(s)>` to limit who can access remotely
+    - upon these changes, save, & `systemctl restart ssh`
+
 ## Transfer Files Between 2 Computers (sftp)
+
+| cmd | description|
+|-----|------------|
+| sftp \<connection string>| transfer files securely|
+| ls | remotehost directory listing|
+|lls | localhost directory listing|
+| put <path>| transfer file from local to remote host|
+| get <path>| transfer file from remote to local host
+| exit| close secure file transfer protocol|
+
+where `<connection string>` is either:
+1. `<username>@<remotehost>`
+2. `<domain_name>` or
+3. `<ip_address>`
 
 
 ## Useful Networking Websites

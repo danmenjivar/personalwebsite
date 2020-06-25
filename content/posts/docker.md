@@ -2,6 +2,7 @@
 title: "Docker for Beginners"
 date: 2020-06-25T08:54:20-07:00
 draft: true
+toc: true
 ---
 
 ## Introduction
@@ -49,3 +50,24 @@ Docker solves this by running each component in a separate container, each with 
     * When problems arose, the Ops team would seek the Dev team for help
 * Docker allows the Dev and Ops teams to work more hand-in-hand
     * Both teams contribute to create a docker file which becomes a docker image which is used by the Dev team to develop the application and by the Ops team to deploy the application
+
+## Docker Basic Commands
+
+| cmd                 | description                        |
+| ------------------- | ---------------------------------- |
+| run \<name> | start a container|
+| ps | list running containers |
+| ps -a | list all containers |
+| stop \<name or id> | stop a container |
+| rm \<name>| remove a container permanently|
+| images | list images |
+| rmi \<name> | remove images |
+| pull \<name>| download an image|
+| run \<name> \<command> | append a command (e.g. docker run ubuntu sleep 5)|
+| exec \<command>| execute a command|
+| run -d | run in detached mode|
+| attach \<id> | re-attach to a container|
+
+
+
+**Note:** a container only lives as long as a process is alive

@@ -152,7 +152,7 @@ The staff members ask you give them read-and-write permission. You don't want th
   * `-type d` will only search for directories
 * a search `<criteria>` such as filename, file permissions, or file size
 
-  * `-[i]name filename` search by name with the optional `[i]` flag to ignore case sensitivity
+  * `-[i]name <filename>` search by name with the optional `[i]` flag to ignore case sensitivity
   * `-perm mode` search by permissions using a mode (e.g. 0664)
   * `-size [+|-]size` you can search for files greater, lesser, or of exact size (e.g. +1M, -1M, 1M)
   * **Note:** you can negate a search criteria by placing the `-not` option in front of the criteria.

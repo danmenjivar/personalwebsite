@@ -68,6 +68,23 @@ Docker solves this by running each component in a separate container, each with 
 | run -d | run in detached mode|
 | attach \<id> | re-attach to a container|
 
+## Docker Run Optional Flags
+* Standard Input Flags
+    * `-i` to run in interactive mode (will accept input)
+    * `-t` to run with pseudo terminal (will display prompts)
+    * `-it` attached to terminal & interactive mode
+* Port Mapping
+    * `-p <port>:<port>` to map ports from container
+* Volume Mapping
+    * `-v <filepath>:<filepath>` to mount external volumes to the docker container
+* Inspect Container
+    * `docker inspect <name or id>` for detailed info on a container
+* Container Logs
+    * `docker loga <id or name>` to read the standard output
+
+## Environment Variables
+
+
 
 
 **Note:** a container only lives as long as a process is alive

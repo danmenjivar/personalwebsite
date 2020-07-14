@@ -67,6 +67,8 @@ Docker solves this by running each component in a separate container, each with 
 | exec \<command>| execute a command|
 | run -d | run in detached mode|
 | attach \<id> | re-attach to a container|
+| inspect \<name or id>| detailed info on a container|
+|log \<id or name>| read standard output|
 
 ## Docker Run Optional Flags
 * Standard Input Flags
@@ -77,14 +79,40 @@ Docker solves this by running each component in a separate container, each with 
     * `-p <port>:<port>` to map ports from container
 * Volume Mapping
     * `-v <filepath>:<filepath>` to mount external volumes to the docker container
-* Inspect Container
-    * `docker inspect <name or id>` for detailed info on a container
-* Container Logs
-    * `docker loga <id or name>` to read the standard output
-
-## Environment Variables
-
-
-
+* Environment Variable
+    - `-e <VARIABLE=value>` pass an environment variable
 
 **Note:** a container only lives as long as a process is alive
+
+## How to Create a Docker Image
+Creating an image is as simple as writing down the commands used for setting up a development environment into a Dockerfile. For example, the steps to setup a flask environment are:
+1. OS - Ubuntu
+2. Update apt repo
+3. Install dependencies with apt
+4. Install Python dependencies with pip
+5. Copy the source code to /opt
+6. Run web server with flask
+These commands translate to the dockerfile:  
+```
+FROM UBUNTU
+RUN apt-get update
+RUN apt-get install python
+
+RUN pip install flask
+RUN pip install flask-mysql
+
+COPY . /opt/source-code
+
+ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
+```
+| cmd                 | description                        |
+| ------------------- | ---------------------------------- |
+| build  \<name> | start a container|
+| ps | list running containers |
+
+
+
+
+
+
+

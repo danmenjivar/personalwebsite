@@ -301,6 +301,8 @@ Cronjobs are processes used to automate tasks (e.g. running backups, updates, et
 
 ### Cronjob Structure
 
+`m h dom dow command`
+
 | abbreviation | meaning      | values |
 | ------------ | ------------ | ------ |
 | m            | minutes      | 0-59   |

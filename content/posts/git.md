@@ -4,34 +4,34 @@ date: 2020-07-14T09:29:31-07:00
 toc: true
 ---
 
-## Version Control Terminology
+## Terminology
 
 | term            | definition                                                                                                                                                                                         |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Branch          | Another path, or line, of development in the repository.                                                                                                                                           |
 | Check out       | To request a copy of a file so you can work on it; a typical feature of centralized version control systems.                                                                                       |
 | Clone           | To make a copy of a repository that exists somewhere locally (in another directory) or remotely (on another server, or Git hosting site such as GitHub).                                           |
-| Commit          | A change that’s saved to a repository, recording itself into the time-line.                                                                                                                        |
+| Commit          | A change that’s saved to a repository, recording itself into the timeline.                                                                                                                         |
 | Distributed     | A characteristic of a system such that its operations can be performed without the need of a server (as opposed to centralized).                                                                   |
 | Repository      | A storage area for files; in the context of version control, this storage area is usually a directory or folder with special operations for viewing the timeline, committing files, and branching. |
 | Staging area    | A feature of Git that enables the developer to commit certain parts of files instead of the whole file.                                                                                            |
 | Timeline        | A set of events ordered by time, from the earliest to the most recent event; also known as a history                                                                                               |
 | Version control | The practice of keeping track of changes such that you can always go back to a known state.                                                                                                        |
 
-## Getting Started with Git
+## Git Command Basics
 
-| cmd                                                  | description                                            |
-| ---------------------------------------------------- | ------------------------------------------------------ |
-| git config --global user.name "Your Name"            | Add your name to the global Git configuration          |
-| git config --global user.email "Your E-mail Address" | Add your email address to the global Git configuration |
-| git config --list                                    | Display all the Git configurations                     |
-| git config user.name                                 | Display the user.name configuration value              |
-| git config user.email                                | Display the user.email configuration value             |
-| git help help                                        | Ask Git for help about its help system                 |
-| git help -a                                          | Print all available Git commands                       |
-| git --paginate help -a                               | Paginate the display of all Git commands               |
-| git help -g                                          | Print all available Git guides                         |
-| git help glossary                                    | Display the Git glossary                               |
+| cmd                                      | description                                            |
+| ---------------------------------------- | ------------------------------------------------------ |
+| `git config --global user.name <name>`   | Add your name to the global Git configuration          |
+| `git config --global user.email <email>` | Add your email address to the global Git configuration |
+| git config --list                        | Display all the Git configurations                     |
+| git config user.name                     | Display the user.name configuration value              |
+| git config user.email                    | Display the user.email configuration value             |
+| git help help                            | Ask Git for help about its help system                 |
+| git help -a                              | Print all available Git commands                       |
+| git --paginate help -a                   | Paginate the display of all Git commands               |
+| git help -g                              | Print all available Git guides                         |
+| git help glossary                        | Display the Git glossary                               |
 
 ## Making & Using a Git Repository
 

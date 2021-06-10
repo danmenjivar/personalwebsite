@@ -13,18 +13,18 @@ The bare essential you need to navigate the terminal.
 
 | cmd                 | description                        |
 | ------------------- | ---------------------------------- |
-| pwd                 | print working directory            |
-| cd                  | change directory                   |
-| ls                  | list contents of current directory |
-| touch <name>        | make a new file                    |
-| mkdir <name>        | make a directory (i.e. folder)     |
-| cp <what> <where>   | copy a file or directory           |
-| mv <what> <where>   | move a file or directory           |
-| mv <name> <newName> | rename a file or directory         |
-| rm <path>           | delete a file or directory (⚠️)    |
-| Ctrl+C              | kill a process (`SIGINT`)          |
-| clear (Ctrl+L)      | clear terminal                     |
-| man <command>       | read the manual of a program       |
+| `pwd`                 | print working directory            |
+| `cd`                  | change directory                   |
+| `ls`                  | list contents of current directory |
+| `touch <name>`        | make a new file                    |
+| `mkdir <name>`        | make a directory (i.e. folder)     |
+| `cp <what> <where>`   | copy a file or directory           |
+| `mv <what> <where>`   | move a file or directory           |
+| `mv <name> <newName>` | rename a file or directory         |
+| `rm <path>`           | delete a file or directory (⚠️)    |
+| `Ctrl+C`              | kill a process (`SIGINT`)          |
+| `clear (Ctrl+L)`      | clear terminal                     |
+| `man <command>`       | read the manual of a program       |
 
 * **Note**: Both `cp` & `mv` allow you to rename a file while performing their respective (copy or move) action and can accept full filepaths.
 
@@ -34,15 +34,15 @@ More complex than the bare essentials, but still essential.
 
 | cmd              | description                                          |
 | ---------------- | ---------------------------------------------------- |
-| cat <filename>   | concatenates (useful for viewing files)              |
-| echo <string>    | outputs string(s) passed (useful for bash scripting) |
-| cd ../           | move 1 directory up                                  |
-| ls <path>        | list contents of a given directory                   |
-| ls -l            | list contents of directory with permissions (⚠️)     |
-| rm -r\[i] *      | delete the contents of a directory (⚠️)              |
-| rm -r\[i] <path> | delete a folder and its contents (⚠️)                |
-| Ctrl+Z           | suspend a process (`SIGSTOP`)                        |
-| script <output>  | log terminal to a file                               |
+| `cat <filename>`   | concatenates (useful for viewing files)              |
+| `echo <string>`    | outputs string(s) passed (useful for bash scripting) |
+| `cd ../`           | move 1 directory up                                  |
+| `ls <path>`        | list contents of a given directory                   |
+| `ls -l`            | list contents of directory with permissions (⚠️)     |
+| `rm -r[i] *`      | delete the contents of a directory (⚠️)              |
+| `rm -r[i] <path>` | delete a folder and its contents (⚠️)                |
+| `Ctrl+Z`           | suspend a process (`SIGSTOP`)                        |
+| `script <output>`  | log terminal to a file                               |
 
 **Notes**:
 
@@ -54,18 +54,18 @@ More complex than the bare essentials, but still essential.
 
 | type     | symbol         | description                                |
 | -------- | -------------- | ------------------------------------------ |
-| absolute | /              | paths beginning from the root directory    |
-| relative | omit / (or ./) | paths beginning from the current directory |
-| home     | ~              | shortcut to user's home directory          |
+| absolute | `/`              | paths beginning from the root directory    |
+| relative | omit `/` (or `./`) | paths beginning from the current directory |
+| home     | `~`              | shortcut to user's home directory          |
 
 ## Admin Privileges
 
 | cmd           | description                            |
 | ------------- | -------------------------------------- |
-| sudo <cmd>    | super user do                          |
-| !!            | "bang bang" shorthand for last command |
-| su <username> | switch user                            |
-| sudo su       | switch to super user                   |
+| `sudo <cmd>`    | super user do                          |
+| `!!`            | "bang bang" shorthand for last command |
+| `su <username>` | switch user                            |
+| `sudo su`       | switch to super user                   |
 
 * **Note:** `!!` is useful to run a previous command with elevated privileges (e.g. `sudo !!`)  
 
@@ -75,12 +75,12 @@ More complex than the bare essentials, but still essential.
 
 | cmd                     | description                           |
 | ----------------------- | ------------------------------------- |
-| apt-get install <name>  | install a program                     |
-| apt-get remove <name>   | uninstall a program                   |
-| apt-cache search <name> | search for a program                  |
-| apt-cache policy <name> | checks if a program is installed      |
-| apt-get update          | updates the package listings          |
-| apt-get upgrade         | upgrades packages with newer versions |
+| `apt install <name>`  | install a program                     |
+| `apt remove <name>`   | uninstall a program                   |
+| `apt search <name>` | search for a program                  |
+| `apt policy <name> | checks if a program is installed`      |
+| `apt update`          | updates the package listings          |
+| `apt upgrade`         | upgrades packages with newer versions |
 
 ### Installing packages not in the repository by manually downloading files:
 
@@ -104,10 +104,10 @@ The 3 columns on the left represent 3 associations every file/directory has:
 
 The letters represent file permissions:
 
-* r = read permission  
-* w = write permission  
-* x = execute permission
-* and the prefix d = directory     
+* `r` = read permission  
+* `w` = write permission  
+* `x` = execute permission
+* and the prefix `d` = directory     
 
 In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part of the `staff` group.\
 `danielmenjivar` can write and read to this file, both the `staff` group and the public may read only.
@@ -116,7 +116,7 @@ In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part
 
 | cmd                               | description      |
 | --------------------------------- | ---------------- |
-| chown \[-R] <user>:<group> <path> | change ownership |
+| `chown [-R] <user>:<group> <path>` | change ownership |
 
 **Note:** The optional argument \[-R] is used to recursively change ownership of all files inside a directory. 
 
@@ -195,7 +195,7 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 | cmd                                  | description      |
 | ------------------------------------ | ---------------- |
-| find <directory> [<type>] <criteria> | search for files |
+| `find <directory> [<type>] <criteria>` | search for files |
 
 * `<directory>` is the path of the directory you want to begin searching at
 * `<type>` is an optional flag, omitting this flag will search for both files and directories
@@ -214,7 +214,7 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 | cmd                                    | description              |
 | -------------------------------------- | ------------------------ |
-| grep \[-n] \[-i] <keyword> <directory> | search contents of files |
+| `grep [-n] [-i] <keyword> <directory>` | search contents of files |
 
 * `<directory>` is the path of the directory you want to begin searching at
 * `<keyword>` is the search string, i.e. what you're looking for
@@ -225,7 +225,7 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 | cmd                                                                                             | description                              |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| find <directory> [<type>] <criteria> **\-exec** grep \[-n] \[-i] <keyword> <directory> **{} +** | search contents of some particular files |
+| `find <directory> [<type>] <criteria> -exec grep [-n] [-i] <keyword> <directory> {} +`| search contents of some particular files |
 
 * `-exec` joins the find and grep commands
 * `{} +` is used to delimit the end of the `-exec`
@@ -254,11 +254,11 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 | cmd               | description                                                    |
 | ----------------- | -------------------------------------------------------------- |
-| top               | shows in real-time the top of the list of running applications |
-| ps aux            | captures a list of running applications (not real-time)        |
-| pgrep <command>   | lists the pid's associated with a command                      |
-| kill <pid>        | kill a process instance                                        |
-| killall <command> | kill all instances of a process                                |
+| `top`               | shows in real-time the top of the list of running applications |
+| `ps aux`            | captures a list of running applications (not real-time)        |
+| `pgrep <command>`   | lists the pid's associated with a command                      |
+| `kill <pid>`        | kill a process instance                                        |
+| `killall <command>` | kill all instances of a process                                |
 
 **Notes:** 
 
@@ -281,11 +281,11 @@ Services are background processes.
 
 | cmd                    | description       |
 | ---------------------- | ----------------- |
-| service <name> start   | start a service   |
-| service <name> stop    | stop a service    |
-| service <name> restart | restart a service |
-| systemctl start <name> | start a service   |
-| systemctl stop <name>  | stop a service    |
+| `service <name> start`   | start a service   |
+| `service <name> stop`    | stop a service    |
+| `service <name> restart` | restart a service |
+| `systemctl start <name>` | start a service   |
+| `systemctl stop <name>`  | stop a service    |
 
 ## Scheduling Tasks (crontab/cronjobs)
 
@@ -293,7 +293,7 @@ Cronjobs are processes used to automate tasks (e.g. running backups, updates, et
 
 | cmd        | description                        |
 | ---------- | ---------------------------------- |
-| crontab -e | start a ctrontab & save it to /etc |
+| `crontab -e` | start a ctrontab & save it to /etc |
 
 ### Cronjob Structure
 
@@ -310,20 +310,21 @@ Cronjobs are processes used to automate tasks (e.g. running backups, updates, et
 
 | cmd                            | description                          |
 | ------------------------------ | ------------------------------------ |
-| adduser <username>             | add new user                         |
-| adduser <username> sudo        | add user to sudo group               |
-| deluser <username>             | remove user                          |
-| passwd <username>              | change a password for a user account |
-| groupadd <groupname>           | create a new group                   |
-| adduser <username> <groupname> | add user to group                    |
+| `adduser <username>`             | add new user                         |
+| `adduser <username> sudo        | add user to sudo group`               |
+| `deluser <username>`             | remove user                          |
+| `passwd <username>`              | change a password for a user account |
+| `groupadd <groupname>`           | create a new group                   |
+| `adduser <username> <groupname>` | add user to group                    |
+| `deluser <username> <groupname>` | remove user from group                    |
 
 ## History: Running Past Commands
 
 | cmd     | description                                |
 | ------- | ------------------------------------------ |
-| !!      | "bang bang", shorthand for last command    |
-| history | displays the last couple commands ran      |
-| !<line> | run past command based on a command number |
+| `!!`      | "bang bang", shorthand for last command    |
+| `history` | displays the last couple commands ran      |
+| `!<line>` | run past command based on a command number |
 
 **Tip:** Ran a command that needs sudo without it? Just run `sudo !!`.
 
@@ -331,10 +332,10 @@ Cronjobs are processes used to automate tasks (e.g. running backups, updates, et
 
 | cmd               | description                                     |
 | ----------------- | ----------------------------------------------- |
-| figlet            | turn boring text into fancy big text            |
-| fortune           | generate random messages                        |
-| cowsay            | because everything is better when a cow says it |
-| cowsay -f moofasa | turn cow into `moofasa`                         |
-| lolcat \[-a]      | rainbow print concatenation \[animate]          |
-| sl                | steam train coming through                      |
-| cmatrix           | become the chosen one                           |
+| `figlet`            | turn boring text into fancy big text            |
+| `fortune`           | generate random messages                        |
+| `cowsay`            | because everything is better when a cow says it |
+| `cowsay -f moofasa` | turn cow into ’moofasa’                         |
+| `lolcat [-a]`      | rainbow print concatenation \[animate]          |
+| `sl`                | steam train coming through                      |
+| `cmatrix`           | become the chosen one                           |

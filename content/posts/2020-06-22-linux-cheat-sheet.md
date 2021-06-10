@@ -16,15 +16,15 @@ The bare essential you need to navigate the terminal.
 | pwd                 | print working directory            |
 | cd                  | change directory                   |
 | ls                  | list contents of current directory |
-| touch \<name>        | make a new file                    |
-| mkdir \<name>        | make a directory (i.e. folder)     |
-| cp \<what> \<where>   | copy a file or directory           |
-| mv \<what> \<where>   | move a file or directory           |
-| mv \<name> \<newName> | rename a file or directory         |
-| rm \<path>           | delete a file or directory (⚠️)    |
+| touch <name>        | make a new file                    |
+| mkdir <name>        | make a directory (i.e. folder)     |
+| cp <what> <where>   | copy a file or directory           |
+| mv <what> <where>   | move a file or directory           |
+| mv <name> <newName> | rename a file or directory         |
+| rm <path>           | delete a file or directory (⚠️)    |
 | Ctrl+C              | kill a process (`SIGINT`)          |
 | clear (Ctrl+L)      | clear terminal                     |
-| man \<command>      | read the manual of a program       |
+| man <command>       | read the manual of a program       |
 
 * **Note**: Both `cp` & `mv` allow you to rename a file while performing their respective (copy or move) action and can accept full filepaths.
 
@@ -32,17 +32,17 @@ The bare essential you need to navigate the terminal.
 
 More complex than the bare essentials, but still essential.
 
-| cmd              | description                                      |
-| ---------------- | ------------------------------------------------ |
-| cat \<filename>  | concatenates (useful for viewing files)          |
-| echo \<string>               | outputs string(s) passed (useful for bash scripting) |
-| cd ../           | move 1 directory up                              |
-| ls <path>        | list contents of a given directory               |
-| ls -l            | list contents of directory with permissions (⚠️) |
-| rm -r\[i] *      | delete the contents of a directory (⚠️)          |
-| rm -r\[i] <path> | delete a folder and its contents (⚠️)            |
-| Ctrl+Z           | suspend a process (`SIGSTOP`)                    |
-| script \<output> | log terminal to a file                           |
+| cmd              | description                                          |
+| ---------------- | ---------------------------------------------------- |
+| cat <filename>   | concatenates (useful for viewing files)              |
+| echo <string>    | outputs string(s) passed (useful for bash scripting) |
+| cd ../           | move 1 directory up                                  |
+| ls <path>        | list contents of a given directory                   |
+| ls -l            | list contents of directory with permissions (⚠️)     |
+| rm -r\[i] *      | delete the contents of a directory (⚠️)              |
+| rm -r\[i] <path> | delete a folder and its contents (⚠️)                |
+| Ctrl+Z           | suspend a process (`SIGSTOP`)                        |
+| script <output>  | log terminal to a file                               |
 
 **Notes**:
 
@@ -96,42 +96,48 @@ After running `ls -l` on a directory you should get something like this:
 
 ![](/uploads/lsTerminal.jpg)
 
-For every file name on the far right, there are 3 columns associated with it: its owner, its group, and the public.
-The red boxes correspond to the owner, blue to group, and yellow to public.
+The 3 columns on the left represent 3 associations every file/directory has:
 
+* user (i.e. the owner of the file/directory) 
+
+  group  
+
+  other (i.e. the public, the “world)
+  The red boxes correspond to the owner, blue to group, and yellow to public.
 * d denotes a directory  
 * r denotes read permission  
 * w denotes write permission  
 * x denotes execute permission   
 
-In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part of the `staff` group.  
+In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part of the `staff` group.\
 `danielmenjivar` can write and read to this file, both the `staff` group and the public may read only.
 
 ### Changing Ownership (chown)
 
-| cmd                                   | description                                                                                                  |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| chown [-R] \<user>:\<group> \<path>   | change ownership |
+| cmd                               | description      |
+| --------------------------------- | ---------------- |
+| chown \[-R] <user>:<group> <path> | change ownership |
 
-**Note:** The optional argument [-R] is used to recursively change ownership of all files inside a directory.
+**Note:** The optional argument \[-R] is used to recursively change ownership of all files inside a directory.
 
-**Why/When do we use chown?** A common scenario to use `chown` is when certain files or directories are owned by the root user and need to be owned by another non-root user. In this scenario a file's permission would look something like this (after executing `ls -l`):  
+**Why/When do we use chown?** A common scenario to use `chown` is when certain files or directories are owned by the root user and need to be owned by another non-root user. In this scenario a file's permission would look something like this (after executing `ls -l`):\
 `-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg`.\
 By executing: `sudo chown danielmenjivar:staff landscape.jpg`,\
 `danielmenjivar` gains ownership the file and as a result can read and write to it.
 
 ### Modifying Permissions (chmod)
 
-| cmd                                      | description                                                                            |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- |
-| chmod [-R] \<mode> \<path> | modify the file's permissions |
+| cmd                       | description                   |
+| ------------------------- | ----------------------------- |
+| chmod \[-R] <mode> <path> | modify the file's permissions |
 
-**Note:** The optional argument [-R] is used to recursively modify permissions of all the files inside a directory.
+**Note:** The optional argument \[-R] is used to recursively modify permissions of all the files inside a directory.
 
 **mode?** The mode is numeric (absolute octal) representation of file permissions. New permissions need to be specified for each column (owner, group, public) and are done through numbers. The basics you need to know are:
+
 * 4 is read-only
 * 6 is read-and-write\
-This is true for all files, if you're dealing with directories (i.e. folders) just +1 to these (5 is read-only, 7 is read-and-write).
+  This is true for all files, if you're dealing with directories (i.e. folders) just +1 to these (5 is read-only, 7 is read-and-write).
 
 **Why/When/How do we use chmod?** Suppose you are an admin and a staff member (who is part of the `staff` group) wants to edit `file.txt`, but for some odd reason they can't. To investigate they run `ls -l` and this is the result:
 `-rw-r--r--  1 danielmenjivar  staff  0 Jun 23 11:56 file.txt`.
@@ -141,9 +147,10 @@ The staff members ask you give them read-and-write permission. You don't want th
 ## Find and Grep
 
 ### Find
-| cmd | description |
-|-----|-------------|
-| find \<directory> [\<type>] \<criteria> | search for files|
+
+| cmd                                  | description      |
+| ------------------------------------ | ---------------- |
+| find <directory> [<type>] <criteria> | search for files |
 
 * `<directory>` is the path of the directory you want to begin searching at
 * `<type>` is an optional flag, omitting this flag will search for both files and directories
@@ -159,9 +166,11 @@ The staff members ask you give them read-and-write permission. You don't want th
 * Find is recursive by default, to disable this use `-maxdepth <amount>`  where `<amount>` is the numeric level (e.g. 1) to limit your search.
 
 ### Grep
-| cmd | description |
-|-----|-------------|
-| grep [-n] [-i] \<keyword> \<directory> | search contents of files|
+
+| cmd                                    | description              |
+| -------------------------------------- | ------------------------ |
+| grep \[-n] \[-i] <keyword> <directory> | search contents of files |
+
 * `<directory>` is the path of the directory you want to begin searching at
 * `<keyword>` is the search string, i.e. what you're looking for
 * `[-i]` optional flag, ignores case sensitivity
@@ -169,87 +178,93 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 ### Grep+Find
 
-| cmd | description |
-|-----|-------------|
-| find \<directory> [\<type>] \<criteria> **-exec** grep [-n] [-i] \<keyword> \<directory> **{} +** | search contents of some particular files|
+| cmd                                                                                             | description                              |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| find <directory> [<type>] <criteria> **\-exec** grep \[-n] \[-i] <keyword> <directory> **{} +** | search contents of some particular files |
+
 * `-exec` joins the find and grep commands
 * `{} +` is used to delimit the end of the `-exec`
 
 **When/How/Why?** Suppose you want to search for the contents of some php files in your current directory. The find command for searching php files would be: `find . -type -iname "*.php"`. To search the contents of these files you can pair find with grep using the `-exec` command. All `-exec` does is run your grep command after running find. To signal when the exec is over, we append `{} +` to the end of the grep command. The resulting command would look like this: `find . -type -iname "*.php" -exec grep -i -n "function" {} +`.
 
-
 ## Redirecting Output of a Command
 
-| cmd | description |
-|-----|-------------|
-| \<command> > \<output>                | redirecting output of a command (e.g. ls > out.txt) |
-| \<command> \| tee \<output>           | redirecting output of a command while seeing results in real-time (e.g. ls \| tee out.txt)|
-
+| cmd                      | description                                                                               |
+| ------------------------ | ----------------------------------------------------------------------------------------- |
+| <command> > <output>     | redirecting output of a command (e.g. ls > out.txt)                                       |
+| <command> | tee <output> | redirecting output of a command while seeing results in real-time (e.g. ls | tee out.txt) |
 
 ## Manage Processes (top)
 
-| cmd | description |
-|-----|-------------|
+| cmd               | description                                                    |
+| ----------------- | -------------------------------------------------------------- |
 | top               | shows in real-time the top of the list of running applications |
-|ps aux | captures a list of running applications (not real-time)|
-|pgrep \<command> | lists the pid's associated with a command
-|kill \<pid> | kill a process instance|
-|killall \<command> | kill all instances of a process |
+| ps aux            | captures a list of running applications (not real-time)        |
+| pgrep <command>   | lists the pid's associated with a command                      |
+| kill <pid>        | kill a process instance                                        |
+| killall <command> | kill all instances of a process                                |
 
 **Notes:** 
+
 * `top`:
-    * `PID` is the process id, used to manage processes
-    * `USER` who the process is running for
-    * `TIME+` how long the process has been running for
-    * `COMMAND` the command associated with the process
+
+  * `PID` is the process id, used to manage processes
+  * `USER` who the process is running for
+  * `TIME+` how long the process has been running for
+  * `COMMAND` the command associated with the process
 * `ps aux`:
-    * You can use grep to search for processes like this: `ps aux | grep firefox`
+
+  * You can use grep to search for processes like this: `ps aux | grep firefox`
 * `pgrep`:
-    * the pid's are listed in chronological order
+
+  * the pid's are listed in chronological order
 
 ## Services
+
 Services are background processes. 
 
-| cmd | description |
-|-----|-------------|
-| service \<name> start              | start a service |
-| service \<name> stop               | stop a service  |
-| service \<name> restart            | restart a service  |
-| systemctl start \<name>            | start a service  |
-| systemctl stop \<name>            | stop a service  |
+| cmd                    | description       |
+| ---------------------- | ----------------- |
+| service <name> start   | start a service   |
+| service <name> stop    | stop a service    |
+| service <name> restart | restart a service |
+| systemctl start <name> | start a service   |
+| systemctl stop <name>  | stop a service    |
 
 ## Scheduling Tasks (crontab/cronjobs)
+
 Cronjobs are processes used to automate tasks (e.g. running backups, updates, etc.)
 
-| cmd | description |
-|-----|-------------|
-| crontab -e              | start a ctrontab & save it to /etc |
+| cmd        | description                        |
+| ---------- | ---------------------------------- |
+| crontab -e | start a ctrontab & save it to /etc |
 
 ### Cronjob Structure
 
-|abbreviation| meaning | values|
-|------------|---------|-------|
-|m| minutes| 0-59|
-|h| hours |0-23|
-|dom| day of month|1-31|
-mon| month number |1-12|
-dow| day of week| 0-6|
-command | to perform||
+| abbreviation | meaning      | values |
+| ------------ | ------------ | ------ |
+| m            | minutes      | 0-59   |
+| h            | hours        | 0-23   |
+| dom          | day of month | 1-31   |
+| mon          | month number | 1-12   |
+| dow          | day of week  | 0-6    |
+| command      | to perform   |        |
 
 ## Managing Users
-| cmd | description |
-|-----|-------------|
-| adduser \<username> | add new user |
-| adduser \<username> sudo | add user to sudo group|
-| deluser \<username>| remove user|
-| passwd \<username> | change a password for a user account |
-| groupadd \<groupname> | create a new group|
-| adduser \<username> \<groupname> | add user to group|
 
+| cmd                            | description                          |
+| ------------------------------ | ------------------------------------ |
+| adduser <username>             | add new user                         |
+| adduser <username> sudo        | add user to sudo group               |
+| deluser <username>             | remove user                          |
+| passwd <username>              | change a password for a user account |
+| groupadd <groupname>           | create a new group                   |
+| adduser <username> <groupname> | add user to group                    |
 
 ## Miscellaneous: Running Past Commands
-| cmd | description |
-|-----|-------------|
-| !! | "bang bang", shorthand for last command |
-| history | displays the last couple commands ran |
-| !\<line> | run past command based on a command number|
+
+| cmd     | description                                |
+| ------- | ------------------------------------------ |
+| !!      | "bang bang", shorthand for last command    |
+| history | displays the last couple commands ran      |
+| !<line> | run past command based on a command number |

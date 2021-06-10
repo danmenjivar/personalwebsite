@@ -98,16 +98,16 @@ After running `ls -l` on a directory you should get something like this:
 
 The 3 columns on the left represent 3 associations every file/directory has:
 
-* user (i.e. the owner of the file/directory) 
+* <span style=“color:red”>user</span> (i.e. the owner of the file/directory) \[red]
+* group  \[blue]
+* other (i.e. the public, the “world)  \[yellow]
 
-  group  
+The letters represent file permissions:
 
-  other (i.e. the public, the “world)
-  The red boxes correspond to the owner, blue to group, and yellow to public.
-* d denotes a directory  
-* r denotes read permission  
-* w denotes write permission  
-* x denotes execute permission   
+* r = read permission  
+* w = write permission  
+* x = execute permission
+* and the prefix d = directory     
 
 In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part of the `staff` group.\
 `danielmenjivar` can write and read to this file, both the `staff` group and the public may read only.
@@ -118,7 +118,8 @@ In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part
 | --------------------------------- | ---------------- |
 | chown \[-R] <user>:<group> <path> | change ownership |
 
-**Note:** The optional argument \[-R] is used to recursively change ownership of all files inside a directory.
+**Note:** The optional argument \[-R] is used to recursively change ownership of all files inside a directory. 
+
 
 **Why/When do we use chown?** A common scenario to use `chown` is when certain files or directories are owned by the root user and need to be owned by another non-root user. In this scenario a file's permission would look something like this (after executing `ls -l`):\
 `-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg`.\
@@ -129,15 +130,59 @@ By executing: `sudo chown danielmenjivar:staff landscape.jpg`,\
 
 | cmd                       | description                   |
 | ------------------------- | ----------------------------- |
-| chmod \[-R] <mode> <path> | modify the file's permissions |
+| chmod \[-R] <shorthand> <path> | modify the file's permissions |
 
 **Note:** The optional argument \[-R] is used to recursively modify permissions of all the files inside a directory.
 
-**mode?** The mode is numeric (absolute octal) representation of file permissions. New permissions need to be specified for each column (owner, group, public) and are done through numbers. The basics you need to know are:
+#### chmod using shorthands (recommended)
 
-* 4 is read-only
-* 6 is read-and-write\
-  This is true for all files, if you're dealing with directories (i.e. folders) just +1 to these (5 is read-only, 7 is read-and-write).
+| groups | permissions | operator | 
+|  -------| ------- |  -------| 
+| u = user | x = execute | + Add | 
+| g = group | w = write | - Remove |
+| o = other | r = read | = Equals |
+| a = all of the above | (blank) = no permissions | , to chain assignments |
+
+**Example**
+To assign an user read & write, add write to group, and assign no permissions to other.
+ 
+`chmod u=rw,g+w,o=`
+
+#### chmod using octals (harder)
+Octal permissions are set using numbers from `0` to `7`.
+
+All you need to know are the basics:
+
+| octal base | permissions | 
+|  -------| ------- | 
+| 0 | none |
+| 1 | execute |
+| 2 | write |
+| 4 | read |
+
+From there, the rest are just combinations (sums)
+
+| combo permission | sum | 
+|  -------| ------- | 
+| execute + write | 1 + 2 = 3|
+| execute + read | 1 + 4 = 5 |
+| write + read | 2 + 4 = 6 |
+| execute + write + read | 1 + 2 + 4 = 7|
+
+**Tip:** if the number is **odd**, it includes **execute**
+
+| cmd                       | description                   |
+| ------------------------- | ----------------------------- |
+| chmod \[-R] <ugo> <path> | modify the file's permissions |
+
+Where `ugo` is the corresponding user mapped to an octal (user, group, other).
+
+**Example**
+To give read/write permissions to user, read to group, and none to others you’d run:
+
+`chmod 640 file`
+
+**Note:** The optional argument \[-R] is used to recursively modify permissions of all the files inside a directory.
 
 **Why/When/How do we use chmod?** Suppose you are an admin and a staff member (who is part of the `staff` group) wants to edit `file.txt`, but for some odd reason they can't. To investigate they run `ls -l` and this is the result:
 `-rw-r--r--  1 danielmenjivar  staff  0 Jun 23 11:56 file.txt`.
@@ -189,10 +234,10 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 ## Redirecting Output of a Command
 
-| cmd                      | description                                                                               |
-| ------------------------ | ----------------------------------------------------------------------------------------- |
-| <command> > <output>     | redirecting output of a command (e.g. ls > out.txt)                                       |
-| <command> | tee <output> | redirecting output of a command while seeing results in real-time (e.g. ls | tee out.txt) |
+| cmd                  | description                                         |                                                                            |              |
+| -------------------- | --------------------------------------------------- | -------------------------------------------------------------------------- | ------------ |
+| <command> > <output> | redirecting output of a command (e.g. ls > out.txt) |                                                                            |              |
+| <command>            | tee <output>                                        | redirecting output of a command while seeing results in real-time (e.g. ls | tee out.txt) |
 
 ## Manage Processes (top)
 
@@ -261,10 +306,25 @@ Cronjobs are processes used to automate tasks (e.g. running backups, updates, et
 | groupadd <groupname>           | create a new group                   |
 | adduser <username> <groupname> | add user to group                    |
 
-## Miscellaneous: Running Past Commands
+## History: Running Past Commands
 
 | cmd     | description                                |
 | ------- | ------------------------------------------ |
 | !!      | "bang bang", shorthand for last command    |
 | history | displays the last couple commands ran      |
 | !<line> | run past command based on a command number |
+
+**Tip:** Ran a command that needs sudo without it? Just run `sudo !!`.
+
+## Fun Terminal Commands
+
+| cmd     | description                                |
+| ------- | ------------------------------------------ |
+| figlet | turn boring text into fancy big text |
+| fortune | generate random messages |
+| cowsay | because everything is better when a cow says it |
+|cowsay -f moofasa | turn cow into `moofasa` |
+| lolcat [-a] | rainbow print concatenation [animate]|
+| sl | steam train coming through |
+| cmatrix | become the chosen one | 
+

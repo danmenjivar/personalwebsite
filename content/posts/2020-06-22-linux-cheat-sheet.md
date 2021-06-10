@@ -129,7 +129,7 @@ By executing: `sudo chown danielmenjivar:staff landscape.jpg`,\
 
 | cmd                            | description                   |
 | ------------------------------ | ----------------------------- |
-| chmod \[-R] <shorthand> <path> | modify the file's permissions |
+| `chmod [-R] <shorthand> <path>` | modify the file's permissions |
 
 **Note:** The optional argument \[-R] is used to recursively modify permissions of all the files inside a directory.
 
@@ -173,7 +173,7 @@ From there, the rest are just combinations (sums)
 
 | cmd                      | description                   |
 | ------------------------ | ----------------------------- |
-| chmod \[-R] <ugo> <path> | modify the file's permissions |
+| `chmod [-R] <ugo> <path>` | modify the file's permissions |
 
 Where `ugo` is the corresponding user mapped to an octal (user, group, other).
 

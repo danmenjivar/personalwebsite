@@ -78,7 +78,7 @@ More complex than the bare essentials, but still essential.
 | `apt install <name>`  | install a program                     |
 | `apt remove <name>`   | uninstall a program                   |
 | `apt search <name>` | search for a program                  |
-| `apt policy <name> | checks if a program is installed`      |
+| `apt policy <name>` | checks if a program is installed`      |
 | `apt update`          | updates the package listings          |
 | `apt upgrade`         | upgrades packages with newer versions |
 

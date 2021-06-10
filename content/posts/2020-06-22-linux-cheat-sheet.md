@@ -120,7 +120,6 @@ In the case of `garden_vintage.jpg`, `danielmenjivar` owns this file and is part
 
 **Note:** The optional argument \[-R] is used to recursively change ownership of all files inside a directory. 
 
-
 **Why/When do we use chown?** A common scenario to use `chown` is when certain files or directories are owned by the root user and need to be owned by another non-root user. In this scenario a file's permission would look something like this (after executing `ls -l`):\
 `-rw-r--r--  1 root            staff         0 Jun 22 09:17 landscape.jpg`.\
 By executing: `sudo chown danielmenjivar:staff landscape.jpg`,\
@@ -128,51 +127,52 @@ By executing: `sudo chown danielmenjivar:staff landscape.jpg`,\
 
 ### Modifying Permissions (chmod)
 
-| cmd                       | description                   |
-| ------------------------- | ----------------------------- |
+| cmd                            | description                   |
+| ------------------------------ | ----------------------------- |
 | chmod \[-R] <shorthand> <path> | modify the file's permissions |
 
 **Note:** The optional argument \[-R] is used to recursively modify permissions of all the files inside a directory.
 
 #### chmod using shorthands (recommended)
 
-| groups | permissions | operator | 
-|  -------| ------- |  -------| 
-| u = user | x = execute | + Add | 
-| g = group | w = write | - Remove |
-| o = other | r = read | = Equals |
+| groups               | permissions              | operator               |
+| -------------------- | ------------------------ | ---------------------- |
+| u = user             | x = execute              | + Add                  |
+| g = group            | w = write                | \- Remove              |
+| o = other            | r = read                 | \= Equals              |
 | a = all of the above | (blank) = no permissions | , to chain assignments |
 
 **Example**
 To assign an user read & write, add write to group, and assign no permissions to other.
- 
+
 `chmod u=rw,g+w,o=`
 
 #### chmod using octals (harder)
+
 Octal permissions are set using numbers from `0` to `7`.
 
 All you need to know are the basics:
 
-| octal base | permissions | 
-|  -------| ------- | 
-| 0 | none |
-| 1 | execute |
-| 2 | write |
-| 4 | read |
+| octal base | permissions |
+| ---------- | ----------- |
+| 0          | none        |
+| 1          | execute     |
+| 2          | write       |
+| 4          | read        |
 
 From there, the rest are just combinations (sums)
 
-| combo permission | sum | 
-|  -------| ------- | 
-| execute + write | 1 + 2 = 3|
-| execute + read | 1 + 4 = 5 |
-| write + read | 2 + 4 = 6 |
-| execute + write + read | 1 + 2 + 4 = 7|
+| combo permission       | sum           |
+| ---------------------- | ------------- |
+| execute + write        | 1 + 2 = 3     |
+| execute + read         | 1 + 4 = 5     |
+| write + read           | 2 + 4 = 6     |
+| execute + write + read | 1 + 2 + 4 = 7 |
 
 **Tip:** if the number is **odd**, it includes **execute**
 
-| cmd                       | description                   |
-| ------------------------- | ----------------------------- |
+| cmd                      | description                   |
+| ------------------------ | ----------------------------- |
 | chmod \[-R] <ugo> <path> | modify the file's permissions |
 
 Where `ugo` is the corresponding user mapped to an octal (user, group, other).
@@ -234,10 +234,21 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 ## Redirecting Output of a Command
 
-| cmd                  | description                                         |                                                                            |              |
-| -------------------- | --------------------------------------------------- | -------------------------------------------------------------------------- | ------------ |
-| <command> > <output> | redirecting output of a command (e.g. ls > out.txt) |                                                                            |              |
-| <command>            | tee <output>                                        | redirecting output of a command while seeing results in real-time (e.g. ls | tee out.txt) |
+| cmd                  | description          |                                                                          
+| -------------------- | ------------------------------ | 
+| `<cmd> | <cmd>` | pipes transfers output from the command on its left into the standard input of the command on its right | 
+| `<command> > <output>` | redirect the output of the command on the left to the file on the right (e.g. ls > out.txt) [2 |                
+| `<cmd> >> <output>` | redirect output of a command on the left and append it to the end of the file on the right |     
+| `<cmd> < <input>` | read from a file |                                                           
+| `<command> | tee <output>` |                                    redirecting output of a command while seeing results in real-time (e.g. `ls | tee out.txt`) |
+
+**Note:** Apart from redirecting between apps & files, we can also redirect between streams by specifying a POSIX stream ID. The `>` by itself is redirecting standard output (i.e. stream ID 1). For example, we can redirect standard error like this: `<cmd> 2> <output>` where 2 indicates the POSIX stream ID. To redirect both standard output and error we’d use `<cmd> &> <output>`. Note that `>` and `1>` are identical since the default behavior of redirect is to do so on standard output.
+
+| POSIX stream ID      | description                    |                                                                          
+| -------------------- | ------------------------------ | 
+| 0 | standard input | 
+| 1 | standard output |
+| 2 | standard error | 
 
 ## Manage Processes (top)
 
@@ -318,13 +329,12 @@ Cronjobs are processes used to automate tasks (e.g. running backups, updates, et
 
 ## Fun Terminal Commands
 
-| cmd     | description                                |
-| ------- | ------------------------------------------ |
-| figlet | turn boring text into fancy big text |
-| fortune | generate random messages |
-| cowsay | because everything is better when a cow says it |
-|cowsay -f moofasa | turn cow into `moofasa` |
-| lolcat [-a] | rainbow print concatenation [animate]|
-| sl | steam train coming through |
-| cmatrix | become the chosen one | 
-
+| cmd               | description                                     |
+| ----------------- | ----------------------------------------------- |
+| figlet            | turn boring text into fancy big text            |
+| fortune           | generate random messages                        |
+| cowsay            | because everything is better when a cow says it |
+| cowsay -f moofasa | turn cow into `moofasa`                         |
+| lolcat \[-a]      | rainbow print concatenation \[animate]          |
+| sl                | steam train coming through                      |
+| cmatrix           | become the chosen one                           |

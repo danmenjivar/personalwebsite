@@ -82,6 +82,8 @@ More complex than the bare essentials, but still essential.
 | `apt update`          | updates the package listings          |
 | `apt upgrade`         | upgrades packages with newer versions |
 
+**Note:** It’s not uncommon to chain update and upgrade by running `apt update && apt upgrade`. `&&` is used to chain commands together if and only the previous command exited without errors.
+
 ### Installing packages not in the repository by manually downloading files:
 
 1. In a web browser, navigate to the download page of the program
@@ -274,6 +276,8 @@ The staff members ask you give them read-and-write permission. You don't want th
 * `pgrep`:
 
   * the pid's are listed in chronological order
+
+**Tip:** You can run commands in the background by post fixig the `&` command. This can be useful for opening applications (e.g. `firefox &`) or running several commands inside one ssh shell.
 
 ## Services
 

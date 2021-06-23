@@ -78,7 +78,7 @@ More complex than the bare essentials, but still essential.
 | `apt install <name>`  | install a program                     |
 | `apt remove <name>`   | uninstall a program                   |
 | `apt search <name>` | search for a program                  |
-| `apt policy <name>` | checks if a program is installed`      |
+| `apt policy <name>` | checks if a program is installed      |
 | `apt update`          | updates the package listings          |
 | `apt upgrade`         | upgrades packages with newer versions |
 
@@ -228,9 +228,11 @@ The staff members ask you give them read-and-write permission. You don't want th
 | cmd                                                                                             | description                              |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | `find <directory> [<type>] <criteria> -exec grep [-n] [-i] <keyword> <directory> {} +`| search contents of some particular files |
+| `find <directory> [<type>] <criteria> \| xargs grep [-n] [-i] <keyword> <directory>`| search contents of some particular files |
 
 * `-exec` joins the find and grep commands
 * `{} +` is used to delimit the end of the `-exec`
+* `xargs` is used to build an execution pipeline from standard input
 
 **When/How/Why?** Suppose you want to search for the contents of some php files in your current directory. The find command for searching php files would be: `find . -type -iname "*.php"`. To search the contents of these files you can pair find with grep using the `-exec` command. All `-exec` does is run your grep command after running find. To signal when the exec is over, we append `{} +` to the end of the grep command. The resulting command would look like this: `find . -type -iname "*.php" -exec grep -i -n "function" {} +`.
 
@@ -238,11 +240,11 @@ The staff members ask you give them read-and-write permission. You don't want th
 
 | cmd                  | description          |                                                                          
 | -------------------- | ------------------------------ | 
-| `<cmd> | <cmd>` | pipes transfers output from the command on its left into the standard input of the command on its right | 
+| `<cmd> \| <cmd>` | pipes transfers output from the command on its left into the standard input of the command on its right | 
 | `<command> > <output>` | redirect the output of the command on the left to the file on the right (e.g. ls > out.txt) [2 |                
 | `<cmd> >> <output>` | redirect output of a command on the left and append it to the end of the file on the right |     
 | `<cmd> < <input>` | read from a file |                                                           
-| `<command> | tee <output>` |                                    redirecting output of a command while seeing results in real-time (e.g. `ls | tee out.txt`) |
+| `<command> \| tee <output>` |                                    redirecting output of a command while seeing results in real-time (e.g. `ls | tee out.txt`) |
 
 **Note:** Apart from redirecting between apps & files, we can also redirect between streams by specifying a POSIX stream ID. The `>` by itself is redirecting standard output (i.e. stream ID 1). For example, we can redirect standard error like this: `<cmd> 2> <output>` where 2 indicates the POSIX stream ID. To redirect both standard output and error we’d use `<cmd> &> <output>`. Note that `>` and `1>` are identical since the default behavior of redirect is to do so on standard output.
 

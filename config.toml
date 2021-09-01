@@ -17,10 +17,11 @@ disqusShortname = "dan"
 
 [params]
     author = "Daniel Menjivar"
-    info = "full stack software engineer"
+    info = "Full Stack Software Engineer"
     description = "Dan Menjivar's personal website"
     keywords = "blog,developer,personal"
     avatarurl = "/uploads/memoji.png"
+    email = "hello@danmenjivar.com"
 
     favicon_32 = "/favicons/favicon-32x32.png"
     favicon_16 = "/favicons/favicon-16x16.png"
@@ -37,30 +38,41 @@ disqusShortname = "dan"
 
 # Social links
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 1
-    url = "https://twitter.com/mrlowkeydan"
-[[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
-    weight = 3
+    weight = 1
     url = "https://linkedin.com/in/danmenjivar/"
 [[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
-    weight = 3
+    weight = 2
     url = "https://github.com/danmenjivar/"
+[[params.social]]
+    name = "StackOverflow"
+    icon = "fab fa-stack-overflow fa-2x"
+    weight = 4
+    url = "https://stackoverflow.com/users/12110124/dan"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 5
+    url = "https://twitter.com/mrlowkeydan"
+[[params.social]]
+    name = "Instagram"
+    icon = "fab fa-instagram fa-2x"
+    weight = 6
+    url = "https://www.instagram.com/_danmenjivar/"
+
 
 # Menu links
 [[menu.main]]
-    name = "Blog"
+    name = "Portfolio"
     weight = 1
-    url  = "/posts/"
+    url  = "/portfolio/"
 [[menu.main]]
-    name = "Coding Resources"
+    name = "Blog"
     weight = 2
-    url  = "/code/"
+    url  = "/posts/"
 [[menu.main]]
     name = "About Me"
     weight = 3

@@ -27,6 +27,8 @@ He is experienced with:
 - **Technologies:** HTML5, CSS, Node.js, Express, React, SQL, MongoDb, Webpack.
 - **Tools:** VS Code, Linux, Git, Postman, Jest.
 
+<!-- TODO: update RESUME -->
+
 {{<buttonShort mtb="5px" link="/uploads/resume.pdf" icon="fas fa-file-pdf" text="Download Resume">}}
 
-When he isn't writing code, he enjoys reading, exercising, and watching TV. His favorite books are _The Coincidence Makers_ & _To Kill a Mockingbird_. His favorite exercise are dumbbell rows. And his favorite TV shows are _Taskmaster_ & _Ted Lasso_.
+When he isn't writing code, he enjoys reading, exercising, and watching TV. His favorite books are _The Coincidence Makers_ & _To Kill a Mockingbird_. His favorite exercise is dumbbell rows. And his favorite TV shows are _Taskmaster_ & _Ted Lasso_.

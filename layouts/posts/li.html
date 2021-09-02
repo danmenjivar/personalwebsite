@@ -1,0 +1,15 @@
+<!-- TODO copy: https://jamstackthemes.dev/theme/hugo-blist/ -->
+<!-- TODO add stylings -->
+
+  <a class="article-card" href="{{ .Params.ExternalLink | default .RelPermalink }}">
+    {{ if .Params.featured_image }}
+    <div class="relative">
+      <img class="article-thumbnail" src="{{ .Params.featured_image }}" alt="{{ .Params.title }}"  />
+      <div class="article-date">
+        {{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006") }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="article-title">{{ .Title }}</div>
+    <div class="article-desc">{{ .Params.description }}</div>
+  </a>

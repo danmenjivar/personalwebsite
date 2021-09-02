@@ -17,7 +17,7 @@ disqusShortname = "dan"
 
 [params]
     author = "Daniel Menjivar"
-    info = "Full Stack Software Engineer"
+    info = "Full Stack Software Developer"
     description = "Dan Menjivar's personal website"
     keywords = "blog,developer,personal"
     avatarurl = "/uploads/memoji.png"
@@ -74,6 +74,6 @@ disqusShortname = "dan"
     weight = 2
     url  = "/posts/"
 [[menu.main]]
-    name = "About Me"
+    name = "About"
     weight = 3
     url = "/about/"

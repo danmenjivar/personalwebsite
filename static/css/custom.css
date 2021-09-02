@@ -13,3 +13,9 @@
   background-color: black;
   color: white;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

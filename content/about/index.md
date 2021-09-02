@@ -1,36 +1,32 @@
 ---
-title: About Me
+title: Who is Dan Menjivar?
 date: 2020-04-19T00:35:37.000Z
 draft: false
 ---
-I do my best to live a simple lifestyle and make the most of what I have. I am an excelled scholar who enjoys balancing work with pleasure, bringing novelty and strong work ethics to everything I do.
 
-If you’re looking to hire me, please view my [resume](/uploads/resume.pdf).  
+<!-- TODO Picture of voxel room -->
 
-- - -
+**Daniel Menjivar** (‘men-HHE-βar’) is a full stack developer from California. He spends most of his day collaborating with others in order to build strong user experiences.
 
-# FAQ
+Danny, as his relatives call him, got his start as a software developer when he was twelve by making a website for his dad's small business. He attended [California State University Channel Islands](https://www.csuci.edu) were he earned a Bachelor's Degree in Computer Science with Minors in Economics and Mathematics. He was awarded the Bill & Melinda Gates Scholarship, as well as the SanDisk Scholarship in High School.
 
-## Where did you study?
+In the past, he has developed:
 
-I earned my Bachelor of Science from California State University Channel Islands majoring in Computer Science and double minoring in Economics & Mathematics.
+- **Desktop Applications** using Java, Python, and Electron.
+- **Full Scale Mobile Apps** for Android with Java and Firebase.
+- **Static Websites (Frontend)** using HTML, CSS, JavaScript, React, and Hugo.
+- **Full Scale Web Apps (Frontend + Backend)** with Node.js, Express, and Pug.
+- **RESTful Web APIs (Backend)** using Node.js and Express.
+- **Managed Databases (Backend)** using SQL and NoSQL
+  (MongoDb) databases.
+- Following **clean code** practices & **agile** methodologies.
 
-## How did you get into software development?
+He is experienced with:
 
- I’ve had an interest for technology and programming from a very young age. But it wasn't until my junior year of undergrad were I was introduced to Software Engineering. Working with a team of five to develop an Android app made me realize software development was my calling.
+- **Programming Languages:** JavaScript, Python, Java, C, Perl.
+- **Technologies:** HTML5, CSS, Node.js, Express, React, SQL, MongoDb, Webpack.
+- **Tools:** VS Code, Linux, Git, Postman, Jest.
 
-## What technologies do you use?
+{{<buttonShort mtb="5px" link="/uploads/resume.pdf" icon="fas fa-file-pdf" text="Download Resume">}}
 
-**Programming Languages:** C, Java, Python, Perl, Javascript, CSS, HTML\
-**Text Editors/IDEs:** Visual Studio Code, Sublime, Vim, Android Studio, IntelliJ\
-**Databases:** SQL (MySQL/MariaDB), MongoDB, neo4j, Firebase\
-**OS:** Linux (Ubuntu/CentOS), macOS, Windows 10\
-**Version Control:** git  
-
-## How do you pronounce your last name?
-
-I know that my last name can be difficult to pronounce, so don’t sweat it. It’s of Basque origin and is correctly pronounced ‘men-HHE-βar’.  
-
-## Besides technology, what other hobbies do you have?
-
-Outside of academia, you can find me balancing work with play by exercising, reading, or watching Netflix.
+When he isn't writing code, he enjoys reading, exercising, and watching TV. His favorite books are _The Coincidence Makers_ & _To Kill a Mockingbird_. His favorite exercise are dumbbell rows. And his favorite TV shows are _Taskmaster_ & _Ted Lasso_.

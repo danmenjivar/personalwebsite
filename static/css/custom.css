@@ -56,7 +56,7 @@
   font-size: 1.8rem;
   font-family: Lato, Helvetica, sans-serif;
   font-weight: 700;
-  color: black;
+  color: #212121;
 }
 
 .article-title:hover {
@@ -70,5 +70,42 @@
 .article-desc {
   font-family: Merriweather, Georgia, serif;
   font-size: 1.6rem;
-  color: black;
+  color: #212121;
 }
+
+.posts-container {
+  margin: 0 auto;
+  max-width: 100rem;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.blog-posts {
+  margin: 3.2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+/* .blog-posts ul {
+  margin: 3.2rem 0;
+  list-style: none;
+  padding: 0;
+}
+.blog-posts ul li {
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .blog-posts ul li {
+    margin: 1.6rem 0;
+  }
+}
+.blog-posts ul li .date {
+  display: inline-block;
+  width: 20rem;
+  text-align: right;
+  margin-right: 3rem;
+} */

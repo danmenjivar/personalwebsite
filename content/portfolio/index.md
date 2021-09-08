@@ -19,6 +19,6 @@ draft: false
 
 {{<portfolioEntry project-title="Etch A Sketch" description="A recreation of a childhood toy. " img-src="/uploads/portfolio/etch-screenshot.jpg" code-link="https://github.com/danmenjivar/etch-a-sketch" demo-link="https://danmenjivar.github.io/etch-a-sketch/" made-with="HTML, CSS & JavaScript">}}
 
-{{<portfolioEntry project-title="JS Rock Paper Scissors" description="A classic, in video game form. " img-src="/uploads/portfolio/js-tictactoe.jpg" code-link="https://github.com/danmenjivar/rock-paper-scissors-js" demo-link="https://danmenjivar.github.io/rock-paper-scissors-js/" made-with="HTML, CSS & JavaScript">}}
+{{<portfolioEntry project-title="JS Rock Paper Scissors" description="A classic, in video game form. " img-src="/uploads/portfolio/rockpaperscissors-screenshot.jpg" code-link="https://github.com/danmenjivar/rock-paper-scissors-js" demo-link="https://danmenjivar.github.io/rock-paper-scissors-js/" made-with="HTML, CSS & JavaScript">}}
 
 {{<portfolioOrganizer />}}

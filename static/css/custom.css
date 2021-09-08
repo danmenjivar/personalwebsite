@@ -20,6 +20,11 @@
   justify-content: center;
 }
 
+.center-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .article-card {
   padding: 0.5rem;
   width: 288px;
@@ -88,6 +93,53 @@
   flex-direction: row;
   justify-content: space-evenly;
   padding: 0;
+}
+
+.portfolio-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 10px;
+  border-radius: 2rem;
+  border: 2px solid #000;
+}
+
+.portfolio-made {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.portfolio-content {
+  width: 262px;
+  padding: 0.8125em 0.625em;
+  border-top: 2px solid #000;
+}
+
+.portfolio-desc {
+  margin: 0;
+  padding: 0.9rem;
+  text-align: center;
+}
+
+.portfolio-title {
+  margin: 0;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.portfolio-thumbnail {
+  display: block;
+  width: 262px;
+  height: 208px;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* .blog-posts ul {

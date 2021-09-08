@@ -1,0 +1,13 @@
+
+<section class="portfolio-card">
+    <img class="portfolio-thumbnail" src="{{ .Get `img-src` }}" alt="project image">
+    <div class="portfolio-content">
+        <h1 class="portfolio-title">{{ .Get `project-title` }}</h1>
+        <div class="portfolio-desc">{{ .Get `description` }}</div>
+        <div class="portfolio-made" ><b>Made with:</b> {{ .Get `made-with`}}</div>
+        <div class="center-sb">
+            <a class="button" href="{{ .Get `code-link` }}" target="_blank"><i style="padding-right: 5px;" class="fab fa-github-alt"></i>View Code</a>
+            <a class="button" href="{{ .Get `demo-link` }}" target="_blank"><i style="padding-right: 5px;" class="fas fa-eye"></i>Live Demo</a>
+        </div>
+    </div>
+</section>

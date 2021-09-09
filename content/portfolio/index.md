@@ -23,4 +23,6 @@ draft: false
 
 {{<portfolioEntry project-title="Memory Card Game" description="A Toy Story themed memory card game." img-src="/uploads/portfolio/memorycard-screenshot.jpg" code-link="https://github.com/danmenjivar/memory-game" demo-link="https://danmenjivar.github.io/memory-game/" made-with="React">}}
 
+{{<portfolioEntry project-title="JS Weather" description="A simple 1-page web app with OpenWeatherAPI & Giphy API." img-src="/uploads/portfolio/weather-screenshot.jpg" code-link="https://github.com/danmenjivar/js-weather" demo-link="https://danmenjivar.github.io/js-weather/" made-with="HTML, CSS & JavaScript">}}
+
 {{<portfolioOrganizer />}}

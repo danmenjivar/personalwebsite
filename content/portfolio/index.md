@@ -21,4 +21,6 @@ draft: false
 
 {{<portfolioEntry project-title="JS Rock Paper Scissors" description="A classic, in video game form. " img-src="/uploads/portfolio/rockpaperscissors-screenshot.jpg" code-link="https://github.com/danmenjivar/rock-paper-scissors-js" demo-link="https://danmenjivar.github.io/rock-paper-scissors-js/" made-with="HTML, CSS & JavaScript">}}
 
+{{<portfolioEntry project-title="Memory Card Game" description="A Toy Story themed memory card game." img-src="/uploads/portfolio/memorycard-screenshot.jpg" code-link="https://github.com/danmenjivar/memory-game" demo-link="https://danmenjivar.github.io/memory-game/" made-with="React">}}
+
 {{<portfolioOrganizer />}}

@@ -25,4 +25,6 @@ draft: false
 
 {{<portfolioEntry project-title="JS Weather" description="A simple 1-page web app with OpenWeatherAPI & Giphy API." img-src="/uploads/portfolio/weather-screenshot.jpg" code-link="https://github.com/danmenjivar/js-weather" demo-link="https://danmenjivar.github.io/js-weather/" made-with="HTML, CSS & JavaScript">}}
 
+{{<portfolioEntry project-title="Restaurant Page" description="A beutifully designed landing page for a fictitious restuarant, built with Webpack." img-src="/uploads/portfolio/restaurant-screenshot.jpg" code-link="https://github.com/danmenjivar/restaurant-page" demo-link="https://danmenjivar.github.io/restaurant-page/" made-with="Webpack, HTML, CSS & JavaScript">}}
+
 {{<portfolioOrganizer />}}

@@ -6,7 +6,7 @@ draft: false
 
 <!-- TODO: update all portfolio images, improve documentation -->
 
-{{<portfolioOrganizer >}}
+{{ <portfolioOrganizer > }}
 
 
 {{<portfolioEntry project-title="CV Maker" description="CV Applcation written in React JavaScript." img-src="/uploads/portfolio/cv-screenshot.png" code-link="https://github.com/danmenjivar/cv-project" demo-link="https://danmenjivar.github.io/cv-project/" made-with="React">}}

@@ -6,8 +6,7 @@ draft: false
 
 <!-- TODO: update all portfolio images, improve documentation -->
 
-{{ <portfolioOrganizer > }}
-
+{{< portfolioOrganizer >}} 
 
 {{<portfolioEntry project-title="CV Maker" description="CV Applcation written in React JavaScript." img-src="/uploads/portfolio/cv-screenshot.png" code-link="https://github.com/danmenjivar/cv-project" demo-link="https://danmenjivar.github.io/cv-project/" made-with="React">}}
 
@@ -27,4 +26,4 @@ draft: false
 
 {{<portfolioEntry project-title="Restaurant Page" description="A beutifully designed landing page for a fictitious restuarant, built with Webpack." img-src="/uploads/portfolio/restaurant-screenshot.jpg" code-link="https://github.com/danmenjivar/restaurant-page" demo-link="https://danmenjivar.github.io/restaurant-page/" made-with="Webpack, HTML, CSS & JavaScript">}}
 
-{{<portfolioOrganizer />}}
+{{< /portfolioOrganizer >}}

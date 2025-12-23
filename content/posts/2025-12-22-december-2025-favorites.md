@@ -2,6 +2,7 @@
 layout: blog
 title: December 2025 Favorites
 date: 2025-12-22T09:51:00.000-08:00
+featured_image: /uploads/dec25favs.jpg
 ---
 ## La Roche-Posay Cicaplast Lip Balm
 

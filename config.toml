@@ -3,8 +3,10 @@ title = "dan menjivar"
 theme = "hugo-coder"
 locale = "en"
 defaultcontentlanguage = "en"
-googleAnalytics = "UA-167541172-1"
 
+[services]
+  [services.googleAnalytics]
+    id = 'G-5CG9N65G74'
 
 [pagination]
 pagerSize = 20
@@ -46,7 +48,7 @@ disqusShortname = "dan"
     name = "BlueSky"
     icon = "fab fa-bluesky fa-2x"
     weight = 1
-    url = "https://bsky.app/profile/danmenjivar.comg"
+    url = "https://bsky.app/profile/danmenjivar.com"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
@@ -62,6 +64,13 @@ disqusShortname = "dan"
     icon = "fab fa-stack-overflow fa-2x"
     weight = 4
     url = "https://stackoverflow.com/users/12110124/dan"
+[[params.social]]
+    name = "RSS"
+    icon = "fa-solid fa-rss fa-2x"
+    weight = 5
+    url = "https://danmenjivar.com/posts/index.xml"
+    rel = "alternate"
+    type = "application/rss+xml"
 
 
 # Menu links

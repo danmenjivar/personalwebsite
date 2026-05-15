@@ -4,31 +4,16 @@ date: 2020-04-19T00:35:37.000Z
 draft: false
 ---
 
-<!-- TODO Picture of voxel room -->
+**Daniel Menjivar** (‘men-HHE-βar’) is a full stack software developer from California, currently working at [Yardi](https://yardi.com) as a SDE II, building resident-facing services for the RentCafe platform.
 
-**Daniel Menjivar** (‘men-HHE-βar’) is a full stack developer from California. He spends most of his day collaborating with others in order to build strong user experiences.
+Dani, as his relatives call him, got his start in software when he was twelve by building a website for his dad’s small business. He went on to earn a Bachelor’s Degree in Computer Science with Minors in Economics and Mathematics from [California State University Channel Islands](https://www.csuci.edu), graduating with a 3.84 GPA. He was awarded the Gates Millennium Scholarship and the SanDisk Scholarship while in high school.
 
-Danny, as his relatives call him, got his start as a software developer when he was twelve by making a website for his dad's small business. He attended [California State University Channel Islands](https://www.csuci.edu) were he earned a Bachelor's Degree in Computer Science with Minors in Economics and Mathematics. He was awarded the Bill & Melinda Gates Scholarship, as well as the SanDisk Scholarship in High School.
+He works across the full stack with:
 
-In the past, he has developed:
-
-- **Desktop Applications** using Java, Python, and Electron.
-- **Full Scale Mobile Apps** for Android with Java and Firebase.
-- **Static Websites (Frontend)** using HTML, CSS, JavaScript, React, and Hugo.
-- **Full Scale Web Apps (Frontend + Backend)** with Node.js, Express, and Pug.
-- **RESTful Web APIs (Backend)** using Node.js and Express.
-- **Managed Databases (Backend)** using SQL and NoSQL
-  (MongoDb) databases.
-- Following **clean code** practices & **agile** methodologies.
-
-He is experienced with:
-
-- **Programming Languages:** JavaScript, Python, Java, C, Perl.
-- **Technologies:** HTML5, CSS, Node.js, Express, React, SQL, MongoDb, Webpack.
-- **Tools:** VS Code, Linux, Git, Postman, Jest.
-
-<!-- TODO: update RESUME -->
+- **Languages & Frameworks:** JavaScript, React, Node.js, Python, C#, .NET, TypeScript
+- **Tools & Platforms:** Git, SQL, MongoDB, Azure DevOps, Jest, Webpack
+- **AI Tools:** Claude, Claude Code, Cursor, GitHub Copilot
 
 {{<buttonShort mtb="5px" link="/uploads/resume.pdf" icon="fas fa-file-pdf" text="Download Resume">}}
 
-When he isn't writing code, he enjoys reading, exercising, and watching TV. His favorite books are _The Coincidence Makers_ & _To Kill a Mockingbird_. His favorite exercise is dumbbell rows. And his favorite TV shows are _Taskmaster_ & _Ted Lasso_.
+When he isn’t writing code, he enjoys reading, running, and retro gaming. His favorite books are _The Coincidence Makers_ & _To Kill a Mockingbird_. He’s been logging more miles lately and still swears by dumbbell rows. And his favorite TV shows are _Taskmaster_ & _Ted Lasso_.

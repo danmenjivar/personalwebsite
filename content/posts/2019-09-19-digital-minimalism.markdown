@@ -10,9 +10,6 @@ The twentieth-first century has become a tech-dominated dystopia, as cartoonist 
 
 To put this into perspective just how dependent we are on technology, consider the hugely successful coffee chain Starbucks. Starbucks alone is responsible for selling about 4 billion cups of coffee each year. That is high demand for a commodity product, so much demand that this creates a problem, long lines. As a result, Starbucks has invested heavily in developing the technological infrastructure to allow for mobile ordering. When it first rolled out, Starbucks reported that over [6 million orders](https://www.fool.com/investing/general/2016/01/26/just-how-big-is-starbucks-mobile-order-pay-and-wha.aspx) were placed through mobile orders each month. The idea behind mobile orders is that they free us from spending needless time waiting in line so that we can spend it being productive elsewhere. Back in February, when the Starbucks app went down, people were not happy.
 
-{{< tweet 1101132334991138816 >}}
-
-{{< tweet 1101134558194552834 >}}
 
 The fact is that even though we live in a time where may companies like Starbucks have embraced models that advertise as simplifying and automating the mundane so we can spend more time doing what we really care about and having more fun, the reality is that we may be the [busiest generation](https://www.thepublicdiscourse.com/2019/04/50540/) to ever live.
 

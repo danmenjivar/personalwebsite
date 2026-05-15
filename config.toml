@@ -1,17 +1,21 @@
 baseurl = ""
 title = "dan menjivar"
 theme = "hugo-coder"
-languagecode = "en"
+locale = "en"
 defaultcontentlanguage = "en"
 googleAnalytics = "UA-167541172-1"
 
 
-paginate = 20
+[pagination]
+pagerSize = 20
 canonifyurls = true
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+
+[markup.goldmark.renderer]
+unsafe = true
 
 disqusShortname = "dan"
 
@@ -34,19 +38,19 @@ disqusShortname = "dan"
     rtl = false
 
     math = true
-    custom_css = ["css/custom.css"]
+    customCSS = ["css/custom.css"]
 
 # Social links
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
+    name = "BlueSky"
+    icon = "fab fa-bluesky fa-2x"
     weight = 1
-    url = "https://twitter.com/mrlowkeydan"
+    url = "https://bsky.app/profile/danmenjivar.com"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
     weight = 2
-    url = "https://linkedin.com/in/danielquintanamenjivar/"
+    url = "https://linkedin.com/in/danmenjivar/"
 [[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"

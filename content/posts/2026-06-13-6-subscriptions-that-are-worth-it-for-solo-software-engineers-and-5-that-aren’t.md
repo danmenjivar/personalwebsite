@@ -31,25 +31,27 @@ The one everyone forgets, but one of the most valuable (imo)
 ## Honorable Mention: VPN (~$5/mo)
 
 **Options:** Mullvad, Proton VPN
-**The Verdict:** OK, hear me out… you can self-host your own VPN and in fact I encourage you to do it (google Wireguard, Tailscale) 
+
+OK, hear me out… you can self-host your own VPN & in fact I encourage you to do it (google Wireguard, Tailscale) That said sometimes I find useful having a VPN when traveling or working remotely. I want to be clear, when you purchase a VPN service, you are at the mercy of the provider upholding to their promise of privacy and security. That said, if you are traveling alone, you more likely than not will find yourself working off unsecured hotel or airport wifi, or might need to get around region locks. And you can’t guarantee your SH VPN will always work. So as a redundancy, I keep a VPN service. around 
+
+## Another Honorable Mention: VPS 
+**Options:** Hetzner, Hostinger
+Skip this if you self host. I think SH is the funner path for hobby projects. Only really worth it if you need uptime independent of your home interne.
 
 
-But, if you travel a lot or are working remotely from another part of the world with . Chances are you will be connecting to some l
 
+# The 3 you can skip
 
-worth it if you travel or work remotely. Encrypts traffic on hotel/airport wifi, gets around network-level blocks on dev tools, and lets you appear in a different region when needed. If you self-host, a Tailscale exit node gets you most of this for free — a paid VPN’s edge is appearing somewhere you actually aren’t.
+## 1. Premium learning platforms
+O’Reilly, Frontend Masters, etc. — genuinely good content, but only worth it if you’re actively working through courses. A subscription you “might use” is just money leaking monthly. Plus, the stuff that is available for free on YouTube, freecodeacamp, and MITOpenCourseWare. You can even leverage that AI subscription to help you learn new topics.
 
+## 2. Paid CI/CD
+GitHub Actions’ free tier covers nearly all solo workloads. You’d have to be building constantly to hit the limits. So until you do, stay on the free tier.
 
-The 5 you can skip
-1. A second (or third) AI subscription
-Paying for Claude and ChatGPT and Cursor and Copilot as a solo dev is redundant. Pick one based on workflow, not FOMO.
-2. A VPS — if you already self-host
-A small VPS (Hetzner, Hostinger) is a fun project, but Cloudflare Tunnel already gives you public access to home services for free. Only get one if you need uptime independent of your home internet.
-3. Paid CI/CD
-GitHub Actions’ free tier covers nearly all solo workloads. You’d have to be building constantly to hit the limits.
-4. Premium learning platforms
-O’Reilly, Frontend Masters, etc. — genuinely good content, but only worth it if you’re actively working through courses. A subscription you “might use” is just money leaking monthly.
-5. Developer accounts you don’t need yet
+## 3. Developer accounts you don’t need yet
+
 Apple Developer ($99/yr) and Google Play ($25 one-time) — don’t pay these “just in case.” Sign up the week you’re actually ready to publish.
-The bottom line
-A realistic must-pay stack is ~$25–35/month: AI assistant, domain, backup, and a password manager. VPN and cloud sync round it out if you travel or want extra peace of mind. The pattern: pay for things that protect you, represent you, or multiply your output — skip the rest until you actually need it.
+
+
+# The bottom line
+A realistic must-pay stack is ~$25–35/month: AI assistant, domain, and backup. VPN and cloud sync round it out if you travel or want extra peace of mind. The pattern: pay for things that protect you, represent you, or multiply your output — skip the rest until you actually need it.

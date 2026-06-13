@@ -4,18 +4,23 @@ title: 6 Subscriptions That Are Worth It for Solo Software Engineers (And 5 That
   Aren’t)
 date: 2026-06-12T17:51:00.000-07:00
 ---
-These days there’s a subscription for everything from gym memberships to the heat warmers of your BMW. It’s easy to end up paying for services you don’t use, so to help round things up I made a list os services I think almost any solo nomad dev will find useful, and which you can skip.
+These days there’s a subscription service for everything & anything from the humble gym membership, Tesla Autopilot, to BMW heat warmers. And if you’re not paying attention, you can easily end up paying for services you barely touch. To help fellow solo devs globally, I’ve round up the services I think are worth keeping, and the ones that aren’t.
 
 # The 6 worth paying for
-## 1. AI Coding Assistant — ~$20/mo
+## 1. AI Coding Assistant (~$20/mo)
 **Options:** Claude Pro, Cursor, GitHub Copilot, ChatGPT Plus
 
-**Verdict:** This is likely the highest ROI subscription on
+**The Verdict:** This is likely the highest ROI subscription on the list. I’ve saved a lot of time with my hobby projects by harnessing the power of coding agents. From writing boring boilerplate, to refactoring, generating tests, documentation, debugging. If you work a 9-5 and want to work on some personal projects, but can’t find the time, leveraging these tools can really make a difference. You don’t need to subscribe to all of them and you probably don’t even need the top tier, just pick one and reap the benefits.
 
- worth it if you code weekly. This is the highest-ROI subscription on the list — faster boilerplate, refactors, test generation, and increasingly, whole tasks delegated end-to-end. Pick one and go deep rather than stacking several.
-2. Domain + Custom Email — ~$10–15/yr
-Pair it with: custom email like you@yourdomain.com (Cloudflare Email Routing is free for forwarding; Fastmail or Proton for a full mailbox)
-Verdict: worth it for everyone. Portfolio credibility, a clean hub for GitHub/resume/projects, and a professional identity for job hunting or freelancing. Lowest cost, highest signal item here — there’s no reason not to own your name.
+I should note I think eventually LLMs will get good enough and small enough that they run locally. But the added benefit these can have in other parts of your life make the $20 entry fee worth it.
+
+## 2. Domain + Custom Email (~$10–15/yr)
+
+**Options:** Porkbun, Cloudflare
+
+Don’t think about it twice. This could have easily taken the #1 spot. Pair it with a custom email (e.g. you@yourdomain.com) using something like Cloudflare Email Routing (which is free btw) or spend the few bucks on Fastmail or Proton for the full mailbox experience.
+
+**The Verdict:** worth it for everyone. Portfolio credibility, a clean hub for GitHub/resume/projects, and a professional identity for job hunting or freelancing. Lowest cost, highest signal item here — there’s no reason not to own your name.
 3. Offsite Backup — ~$1–6/mo
 Options: Backblaze B2, Hetzner Storage Box
 Verdict: worth it, and the one everyone forgets. RAID is not a backup. Syncthing is not a backup — it’ll happily sync ransomware-encrypted files to every device you own. Follow 3-2-1 (three copies, two media, one offsite) and automate it with restic or Borg. For the price of a coffee, your data survives a house fire, theft, or a bad rm -rf.

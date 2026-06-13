@@ -6,7 +6,7 @@ date: 2026-06-12T17:51:00.000-07:00
 ---
 These days there’s a subscription service for everything & anything from the humble gym membership, Tesla Autopilot, to BMW heat warmers. And if you’re not paying attention, you can easily end up paying for services you barely touch. To help fellow solo devs globally, I’ve round up the services I think are worth keeping, and the ones that aren’t.
 
-# The 5 worth paying for
+# The 3 worth paying for
 ## 1. AI Coding Assistant (~$20/mo)
 **Options:** Claude Pro, Cursor, GitHub Copilot, ChatGPT Plus
 
@@ -26,14 +26,20 @@ Don’t think about it twice. This could have easily taken the #1 spot. Pair it 
 The one everyone forgets, but one of the most valuable (imo)
 
 **Options:** Backblaze B2, Hetzner Storage Box
-**Verdict:** Always follow the 3-2-1 rule (three copies, two media, one offsite). For the price of a coffee, your data survives a house fire, theft, or a bad rm -rf. Remember RAID isn’t a backup!
+**The Verdict:** Always follow the 3-2-1 rule (three copies, two media, one offsite). For the price of a coffee, your data survives a house fire, theft, or a bad rm -rf. Remember RAID isn’t a backup!
 
-## 4. VPN — ~$5/mo
-Options: Mullvad, Proton VPN
-Verdict: worth it if you travel or work remotely. Encrypts traffic on hotel/airport wifi, gets around network-level blocks on dev tools, and lets you appear in a different region when needed. If you self-host, a Tailscale exit node gets you most of this for free — a paid VPN’s edge is appearing somewhere you actually aren’t.
-6. Cloud Sync / Storage — ~$2–10/mo
-Options: iCloud+, Google One, or self-hosted Nextcloud
-Verdict: worth it for peace of mind. Not a backup substitute, but having your active files, photos, and notes synced across devices (and accessible if a laptop dies) is cheap enough to not think about.
+## Honorable Mention: VPN (~$5/mo)
+
+**Options:** Mullvad, Proton VPN
+**The Verdict:** OK, hear me out… you can self-host your own VPN and in fact I encourage you to do it (google Wireguard, Tailscale) 
+
+
+But, if you travel a lot or are working remotely from another part of the world with . Chances are you will be connecting to some l
+
+
+worth it if you travel or work remotely. Encrypts traffic on hotel/airport wifi, gets around network-level blocks on dev tools, and lets you appear in a different region when needed. If you self-host, a Tailscale exit node gets you most of this for free — a paid VPN’s edge is appearing somewhere you actually aren’t.
+
+
 The 5 you can skip
 1. A second (or third) AI subscription
 Paying for Claude and ChatGPT and Cursor and Copilot as a solo dev is redundant. Pick one based on workflow, not FOMO.

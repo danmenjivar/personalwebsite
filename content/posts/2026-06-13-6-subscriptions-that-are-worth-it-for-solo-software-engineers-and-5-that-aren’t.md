@@ -6,7 +6,7 @@ date: 2026-06-12T17:51:00.000-07:00
 ---
 These days there’s a subscription service for everything & anything from the humble gym membership, Tesla Autopilot, to BMW heat warmers. And if you’re not paying attention, you can easily end up paying for services you barely touch. To help fellow solo devs globally, I’ve round up the services I think are worth keeping, and the ones that aren’t.
 
-# The 6 worth paying for
+# The 5 worth paying for
 ## 1. AI Coding Assistant (~$20/mo)
 **Options:** Claude Pro, Cursor, GitHub Copilot, ChatGPT Plus
 
@@ -23,12 +23,12 @@ Don’t think about it twice. This could have easily taken the #1 spot. Pair it 
 **The Verdict:** Your own domain gives your portfolio credibility, it builds your personal brand, host your resume, or blog. Make a portfolio. Give yourself a professional identity for job hunting or freelance work. It’s the lowest cost, highest signal item here — there’s no reason not to own your name.
 
 ## 3. Offsite Backup (~$1–6/mo)
+The one everyone forgets, but one of the most valuable (imo)
+
 **Options:** Backblaze B2, Hetzner Storage Box
-**Verdict:** worth it, and the one everyone forgets. RAID is not a backup. Syncthing is not a backup — it’ll happily sync ransomware-encrypted files to every device you own. Follow 3-2-1 (three copies, two media, one offsite) and automate it with restic or Borg. For the price of a coffee, your data survives a house fire, theft, or a bad rm -rf.
-4. Password Manager — ~$0–3/mo
-Options: Bitwarden, 1Password, or self-hosted Vaultwarden
-Verdict: worth it, even if “worth it” means free. Unique passwords everywhere plus secure notes for API keys and recovery codes. Self-hosting Vaultwarden gets you the paid features for free if you’ve already got somewhere to run it.
-5. VPN — ~$5/mo
+**Verdict:** Always follow the 3-2-1 rule (three copies, two media, one offsite). For the price of a coffee, your data survives a house fire, theft, or a bad rm -rf. Remember RAID isn’t a backup!
+
+## 4. VPN — ~$5/mo
 Options: Mullvad, Proton VPN
 Verdict: worth it if you travel or work remotely. Encrypts traffic on hotel/airport wifi, gets around network-level blocks on dev tools, and lets you appear in a different region when needed. If you self-host, a Tailscale exit node gets you most of this for free — a paid VPN’s edge is appearing somewhere you actually aren’t.
 6. Cloud Sync / Storage — ~$2–10/mo

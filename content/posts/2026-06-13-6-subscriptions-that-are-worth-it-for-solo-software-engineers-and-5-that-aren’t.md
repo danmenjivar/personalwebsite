@@ -37,14 +37,14 @@ OK, hear me out… you can self-host your own VPN & in fact I encourage you to d
 ## Another Honorable Mention: VPS 
 **Options:** Hetzner, Hostinger
 
-Skip this if you self host. I think SH is the funner path for hobby projects. Only really worth it if you need uptime independent of your home interne.
+Skip this if you self host. I think SH is the funner path for hobby projects. Only really worth it if you need uptime independent of your home internet.
 
 
 
 # The 3 you can skip
 
 ## 1. Premium learning platforms
-O’Reilly, Frontend Masters, etc. — genuinely good content, but only worth it if you’re actively working through courses. A subscription you “might use” is just money leaking monthly. Plus, the stuff that is available for free on YouTube, freecodeacamp, and MITOpenCourseWare. You can even leverage that AI subscription to help you learn new topics.
+O’Reilly, Frontend Masters, etc. — genuinely good content, but only worth it if you’re actively working through courses. A subscription you “might use” is just money leaking monthly. Plus, the stuff that is available for free on YouTube, freecodeacamp, and MITOpenCourseWare is more than you can go through in a lifetime. You can even leverage that AI subscription to help you learn new topics.
 
 ## 2. Paid CI/CD
 GitHub Actions’ free tier covers nearly all solo workloads. You’d have to be building constantly to hit the limits. So until you do, stay on the free tier.

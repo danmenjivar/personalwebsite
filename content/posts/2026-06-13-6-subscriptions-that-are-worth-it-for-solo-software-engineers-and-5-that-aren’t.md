@@ -20,10 +20,11 @@ I should note I think eventually LLMs will get good enough and small enough that
 
 Don’t think about it twice. This could have easily taken the #1 spot. Pair it with a custom email (e.g. you@yourdomain.com) using something like Cloudflare Email Routing (which is free btw) or spend the few bucks on Fastmail or Proton for the full mailbox experience.
 
-**The Verdict:** worth it for everyone. Portfolio credibility, a clean hub for GitHub/resume/projects, and a professional identity for job hunting or freelancing. Lowest cost, highest signal item here — there’s no reason not to own your name.
-3. Offsite Backup — ~$1–6/mo
-Options: Backblaze B2, Hetzner Storage Box
-Verdict: worth it, and the one everyone forgets. RAID is not a backup. Syncthing is not a backup — it’ll happily sync ransomware-encrypted files to every device you own. Follow 3-2-1 (three copies, two media, one offsite) and automate it with restic or Borg. For the price of a coffee, your data survives a house fire, theft, or a bad rm -rf.
+**The Verdict:** Your own domain gives your portfolio credibility, it builds your personal brand, host your resume, or blog. Make a portfolio. Give yourself a professional identity for job hunting or freelance work. It’s the lowest cost, highest signal item here — there’s no reason not to own your name.
+
+## 3. Offsite Backup (~$1–6/mo)
+**Options:** Backblaze B2, Hetzner Storage Box
+**Verdict:** worth it, and the one everyone forgets. RAID is not a backup. Syncthing is not a backup — it’ll happily sync ransomware-encrypted files to every device you own. Follow 3-2-1 (three copies, two media, one offsite) and automate it with restic or Borg. For the price of a coffee, your data survives a house fire, theft, or a bad rm -rf.
 4. Password Manager — ~$0–3/mo
 Options: Bitwarden, 1Password, or self-hosted Vaultwarden
 Verdict: worth it, even if “worth it” means free. Unique passwords everywhere plus secure notes for API keys and recovery codes. Self-hosting Vaultwarden gets you the paid features for free if you’ve already got somewhere to run it.

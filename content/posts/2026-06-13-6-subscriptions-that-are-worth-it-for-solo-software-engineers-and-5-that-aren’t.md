@@ -36,6 +36,7 @@ OK, hear me out… you can self-host your own VPN & in fact I encourage you to d
 
 ## Another Honorable Mention: VPS 
 **Options:** Hetzner, Hostinger
+
 Skip this if you self host. I think SH is the funner path for hobby projects. Only really worth it if you need uptime independent of your home interne.
 
 

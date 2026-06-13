@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 6 Subscriptions That Are Worth It for Solo Software Engineers (And 5 That
+title: 3 Subscriptions That Are Worth It for Solo Software Engineers (And 3 That
   Aren’t)
 date: 2026-06-12T17:51:00.000-07:00
 ---

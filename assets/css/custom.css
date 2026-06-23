@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   font-size: 1.4rem;
   font-weight: 400;
   padding: 0.6em;
@@ -12,6 +13,10 @@
   padding: 0.6em;
   background-color: black;
   color: white;
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
 
 .center {

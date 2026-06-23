@@ -68,7 +68,7 @@ disqusShortname = "dan"
     name = "RSS"
     icon = "fa-solid fa-rss fa-2x"
     weight = 5
-    url = "https://danmenjivar.com/posts/index.xml"
+    url = "feed://danmenjivar.com/posts/index.xml"
     rel = "alternate"
     type = "application/rss+xml"
 

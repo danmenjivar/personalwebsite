@@ -14,13 +14,13 @@ toc: true
 * 🕸 [Khan Academy](https://www.khanacademy.org/computing)
 * 📹 [The New Boston Videos](https://www.youtube.com/user/thenewboston)
 * 🕸 [The Odin Project](https://www.theodinproject.com/)
-* 🕸 [Full Stack Open](https://fullstackopen.com/) — University of Helsinki
+* 🕸 [Full Stack Open](https://fullstackopen.com/)
 * 🕸 [roadmap.sh](https://roadmap.sh/)
 
 ## Computer Science
 
 * 🕸 [Algorithm Tracing Technique](http://users.csc.calpoly.edu/~jdalbey/309/Lectures/algorithmTrace.html)
-* 🎓 [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) — MIT
+* 🎓 [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 * 📙 [Grokking's Algorithms](https://a.co/d/01g6BU0r) ($)
 * 🕸 [Guru 99](https://www.guru99.com/)
 * 📕 [The Nature of Code](https://natureofcode.com/)
@@ -49,8 +49,8 @@ toc: true
 
 ## Markdown
 
-  * 🕸 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-  * 🕸 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+* 🕸 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* 🕸 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 ## Developer Tools
 
@@ -64,6 +64,7 @@ toc: true
 | [ezprompt.net](https://ezprompt.net/)                                | Customizing your bash PS1           |
 | [Figma](https://www.figma.com/)                                      | Prototyping designs collaboratively |
 | [Homebrew](https://brew.sh/)                                         | macOS package manager               |
+| [IT Tools](https://it-tools.tech/)                                   | A lot
 | [Karabiner-Elements](https://karabiner-elements.pqrs.org/index.html) | Keyboard customizer for macOS       |
 | [Mermaid](https://mermaid.js.org/)                                   | Text-based diagrams                 |
 | [regex101](https://regex101.com/)                                    | Building & debugging regex          |
@@ -86,6 +87,6 @@ toc: true
 * 🕸 [LeetCode](https://leetcode.com/)
 * 🕸 [NeetCode](https://neetcode.io/)
 
----
+- - -
 
 Have any suggestions I should consider adding? DM *[@danmenjivar.com](https://bsky.app/profile/danmenjivar.com)* on Bluesky and let me know.
